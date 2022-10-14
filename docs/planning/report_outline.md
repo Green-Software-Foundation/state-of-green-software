@@ -16,10 +16,12 @@ Sustainability Insights to the Software Industry
   * [Section 8 - State of Green Software Tools](#section-8---state-of-green-software-tools)
   * [Section 9 - State of Green Software Education and Training](#section-9---state-of-green-software-education-and-training)
   * [Section 10 - State of Green Software Policies and Standards](#section-10---state-of-green-software-policies-and-standards)
+  * [Section 11 - State of Green Software Regulations](#section-11---state-of-green-software-regulations)
   * [Section 12 - Green Software Indicator Framework](#section-12---green-software-indicator-framework)
-  * [Section 13 - Conclusion:](#section-13---conclusion-)
+  * [Section 13 - Conclusion](#section-13---conclusion)
   * [Section 14 - Recommendations](#section-14---recommendations)
   * [Appendices](#appendices)
+  * [Content to be covered](#content-to-be-covered)
 <!-- TOC -->
 
 ## Chair’s Foreword 
@@ -127,7 +129,7 @@ Sustainability Insights to the Software Industry
 * State of Indicators
 
 
-## Section 13 - Conclusion:
+## Section 13 - Conclusion
 * Green Software Ecosystem Needs, Opportunities, Improvements, Strengths and Exceptions (NOISE)
 
 
@@ -135,9 +137,9 @@ Sustainability Insights to the Software Industry
 
 ## Appendices
 
+***
 
-
-## CONTENT TO BE COVERED
+## Content to be covered
 
 - What is the interest in exploring this space? Why is this important? \
 - Key findings: stats, key actors, resources, trends, events, regulations (with visualisations) \
@@ -189,8 +191,6 @@ What tooling is the most popular?
 What open-source tooling is the most popular?
 
 What is the interest in exploring this space?
-
-
 
 * What are the current state and future trends related to green software?
 * What is the state of the art regarding green software research, including the correct most up-to-date stats we should all be quoting?

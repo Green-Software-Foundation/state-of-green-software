@@ -1,10 +1,12 @@
 Follow the instructions in [CONFIGURE.md](CONFIGURE.md) to learn how to configure this template repository.
 
-# PROJECT-TITLE
+# State of Green Software
 
-TODO
+The State of Green Software Report will map and analyse comprehensively the state of the green software ecosystem.
 
-This is a project run through the [Community Working Group](https://grnsft.org/community-wg) in the [Green Software Foundation](https://greensoftware.foundation) and can be viewed through https://TODO.greensoftware.foundation
+Documents and sections will be added to the [docs]() directory as they are completed.
+
+This is a project run through the [Policy Working Group](https://grnsft.org/policy-wg) at the [Green Software Foundation](https://greensoftware.foundation) and can be viewed through https://TODO.greensoftware.foundation
 
 ## Copyright
 This project is copyrighted under [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/).

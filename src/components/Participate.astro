@@ -1,0 +1,55 @@
+<section class="container">
+  <div class="content">
+    <h1 class="title">How you can participate</h1>
+    <p>
+      This open source report brings together a global developer survey, desk
+      research and high impact interviews. As a software developer you can make
+      a positive contribution by answering the 5 minute survey. This will help
+      us understand what needs to happen to empower technologists to make a
+      global difference.
+    </p>
+    <a class="button" href="#"> Take the survey now</a>
+  </div>
+</section>
+<style>
+  section {
+    background-color: #181818;
+    text-align: center;
+  }
+  .content {
+    padding: 4rem 0;
+    max-width: 586px;
+    margin: 0 auto;
+  }
+  p {
+    margin-bottom: 2rem;
+  }
+  @media (min-width: 768px) {
+    section {
+      border-radius: 6rem 0px;
+      position: relative;
+      margin-bottom: 6rem;
+    }
+    section::before,
+    section::after {
+      content: "";
+      position: absolute;
+
+      width: 38px;
+      height: 69px;
+      background-image: url("images/participate.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    section::before {
+      top: 2rem;
+      right: 2rem;
+    }
+    section::after {
+      bottom: 2rem;
+      left: 2rem;
+      transform: rotate(180deg);
+    }
+  }
+</style>

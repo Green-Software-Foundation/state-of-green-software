@@ -1,0 +1,101 @@
+---
+const data = [
+  {
+    text: "The survey is open \n from {highlight}",
+    highlight: "10 Nov to 31 Dec",
+  },
+  {
+    text: "All {highlight} can participate",
+    highlight: "software practitioners",
+  },
+  {
+    text: "There are {highlight}, requiring short, quick answers",
+    highlight: "25-30 questions",
+  },
+  {
+    text: "The survey will take about {highlight} to complete",
+    highlight: "5 minutes",
+  },
+  {
+    text: "Results are expected to be available in {highlight}",
+    highlight: "February 2023",
+  },
+];
+---
+
+<section class="container">
+  <h1 class="title">Survey details</h1>
+  <ul>
+    {
+      data.map((item) => (
+        <li>
+          <svg
+            width="11"
+            height="24"
+            viewBox="0 0 11 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.5008 0C5.93719 3.81501e-08 6.29206 0.083367 6.29206 0.185882L6.29206 19.7596C6.29206 19.8621 5.93719 19.9454 5.5008 19.9454C5.06441 19.9454 4.70954 19.8621 4.70954 19.7596L4.70954 0.185882C4.70954 0.0833668 5.06442 -3.81501e-08 5.5008 0Z"
+              fill="#ADCB53"
+            />
+            <path
+              d="M0.733398 18.9187C0.733398 21.5527 2.86739 23.6877 5.50006 23.6877C8.13274 23.6877 10.2667 21.5527 10.2667 18.9187C10.2667 16.2847 8.13274 14.1496 5.50006 14.1496C2.86739 14.1449 0.733399 16.2847 0.733398 18.9187Z"
+              fill="#ADCB53"
+            />
+          </svg>
+          <span>
+            {item.text.split("{highlight}").map((text) => (
+              <>
+                <span>{text}</span>
+                {text !== item.text.split("{highlight}")[1] && (
+                  <span class="highlight">{item.highlight}</span>
+                )}
+              </>
+            ))}
+          </span>
+        </li>
+      ))
+    }
+  </ul>
+</section>
+<style>
+  section {
+    margin-bottom: 4rem;
+  }
+  .highlight {
+    color: var(--primary);
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+  }
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 4rem;
+    gap: 8px;
+    background: #2a2a2a;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 700;
+  }
+  @media (min-width: 768px) {
+    section {
+      margin-bottom: 6rem;
+    }
+    h1 {
+      text-align: center;
+    }
+    ul {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    li {
+      padding: 2rem 0.5rem;
+    }
+  }
+</style>

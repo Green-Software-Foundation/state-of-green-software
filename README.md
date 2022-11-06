@@ -9,12 +9,15 @@ Documents and sections will be added to the [docs]() directory as they are compl
 This is a project run through the [Policy Working Group](https://grnsft.org/policy-wg) at the [Green Software Foundation](https://greensoftware.foundation) and can be viewed through https://TODO.greensoftware.foundation
 
 ## Copyright
+
 This project is copyrighted under [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ## Patent
+
 No Patent License.
 
 ## License
+
 This project is licensed under the MIT License - see the [LICENCE](LICENCE) file for details.
 
 ## Contributing
@@ -37,15 +40,11 @@ The documentation files use a format called markdown and they end in `.md` which
 
 To edit this project on your local machine and see the output as it would be rendered on the website you will need `node` at least version 14 installed.
 
-We also recommend to use `yarn` as the package management solution as the deployment scripts use `yarn` not `npm`.
-
-`npm -g install yarn`
-
-`yarn install`
+`npm install`
 
 Then to run the project locally type
 
-`yarn run docusaurus start`
+`npm start`
 
 and visit https://localhost:3000 in your favorite browser or whatever the command above prints out in the terminal.
 

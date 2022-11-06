@@ -1,0 +1,68 @@
+---
+const data = [
+  {
+    image: "/images/developers.svg",
+    text: "for developers seeking to measure and improve the carbon footprint of their software",
+  },
+  {
+    image: "/images/business.svg",
+    text: "for business, technical and product leaders making investment decisions, technology choices and strategic calls",
+  },
+  {
+    image: "/images/institutions.svg",
+    text: "for guiding institutions and thought leaders setting global and national standards, regulations and policy objectives",
+  },
+];
+---
+
+<section class="container">
+  <div>
+    <h1 class="title">Why the report will strengthen our industry</h1>
+    <p class="text">
+      While the green software ecosystem is growing rapidly, it is also
+      fragmented and in need of greater visibility. The State of Green Software
+      Report is an important milestone towards integrating, coordinating,
+      expanding and mainstreaming green software across all digital industries.
+    </p>
+    <p>This report will be an immediately actionable tool, at scale:</p>
+  </div>
+  <div class="items-wrapper">
+    {
+      data.map((item) => (
+        <div class="item">
+          <img src={item.image} alt="Icon" />
+          <p>{item.text}</p>
+        </div>
+      ))
+    }
+  </div>
+</section>
+<style>
+  section {
+    margin-bottom: 4rem;
+  }
+  .text {
+    margin-bottom: 2rem;
+  }
+  .items-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  @media (min-width: 768px) {
+    section {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 8rem;
+      align-items: center;
+      margin-bottom: 7rem;
+    }
+  }
+</style>

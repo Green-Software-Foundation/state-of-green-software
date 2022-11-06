@@ -1,0 +1,86 @@
+---
+const data = [
+  {
+    title: "What is green software?",
+    description:
+      "Green software aims to reduce the carbon emissions associated with software. As such, green software is software that emits the least amount of carbon possible. This can be achieved by making software more energy efficient, using less hardware, or letting software do more when the electricity is clean and less when it's dirty.",
+    image: "/images/green-software.svg",
+  },
+  {
+    title: "What is the problem?",
+    description:
+      "There is growing awareness of the enormous environmental impact of digital products. This has led to global efforts to address it through green software, meaning software optimized to generate the least amount of CO2 emissions. ",
+    image: "/images/problem.svg",
+  },
+  {
+    title: "Taking climate action",
+    description:
+      "The State of Green Software report will increase industry adoption of best practices and metrics,  stimulate investment in greening software products, and facilitate coordination of software-focused climate action.",
+    image: "/images/action.svg",
+  },
+];
+---
+
+<section>
+  <div class="container">
+    {
+      data.map((item) => (
+        <div class="item-wrapper">
+          <div class="img-wrapper">
+            <img src={item.image} alt={item.title} />
+          </div>
+          <div class="content-wrapper">
+            <h1 class="title">{item.title}</h1>
+            <p>{item.description}</p>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>
+<style>
+  section {
+    background-color: #181818;
+    padding: 4rem 0;
+    margin-bottom: 4rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .img-wrapper {
+    margin-bottom: 2rem;
+  }
+  img {
+    margin: auto;
+    width: 200px;
+  }
+  @media (min-width: 768px) {
+    section {
+      padding: 6rem 0;
+    }
+    .item-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 4rem;
+    }
+    .item-wrapper:nth-child(odd) {
+      grid-template-areas: "img content";
+    }
+    .item-wrapper:nth-child(even) {
+      grid-template-areas: "content img";
+    }
+    .img-wrapper {
+      grid-area: img;
+      margin-bottom: 0;
+    }
+    .content-wrapper {
+      grid-area: content;
+    }
+    img {
+      width: 300px;
+    }
+  }
+</style>

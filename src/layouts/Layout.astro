@@ -1,0 +1,260 @@
+---
+import "@fontsource/nunito-sans/400.css";
+import "@fontsource/nunito-sans/600.css";
+import "@fontsource/nunito-sans/700.css";
+import "@fontsource/nunito-sans/800.css";
+import "@fontsource/nunito-sans/900.css";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <!-- Primary Meta Tags -->
+    <title>State of Green Software</title>
+    <meta name="title" content="State of Green Software" />
+    <meta
+      name="description"
+      content="The State of Green Software will be the first report to map the new green software ecosystem, from key stakeholders to regulatory frameworks, from impact metrics to academic literature, open source tooling to actionable design patterns."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://stateof.greensoftware.org/" />
+    <meta property="og:title" content="State of Green Software" />
+    <meta
+      property="og:description"
+      content="The State of Green Software will be the first report to map the new green software ecosystem, from key stakeholders to regulatory frameworks, from impact metrics to academic literature, open source tooling to actionable design patterns."
+    />
+    <meta
+      property="og:image"
+      content="https://stateof.greensoftware.org/images/og-image.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://stateof.greensoftware.org/" />
+    <meta property="twitter:title" content="State of Green Software" />
+    <meta
+      property="twitter:description"
+      content="The State of Green Software will be the first report to map the new green software ecosystem, from key stakeholders to regulatory frameworks, from impact metrics to academic literature, open source tooling to actionable design patterns."
+    />
+    <meta
+      property="twitter:image"
+      content="https://stateof.greensoftware.org/images/og-image.png"
+    />
+    <!-- Google tag (gtag.js) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-J4QL1X3BWV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-J4QL1X3BWV");
+    </script> -->
+  </head>
+  <body>
+    <header>
+      <div><img src="/images/logo.svg" alt="SoGS Logo" /></div>
+      <h1>State of <span> green software</span></h1>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <div class="logo">
+        <img src="/images/logo-gsf.svg" alt="GSF Logo" />
+      </div>
+      <div class="links">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://greensoftware.foundation/policy/terms">Privacy Policy</a
+        > | <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://greensoftware.foundation/code-of-conduct"
+          >Code of Conduct</a
+        >
+      </div>
+      <p class="copyrights">
+        Copyright © 2022 Joint Development Foundation Projects, LLC, <br />
+        Green Software Foundation Series
+      </p>
+    </footer>
+    <style is:global>
+      :root {
+        --primary: #aecc53;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      * {
+        margin: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+      html {
+        font-family: "Nunito Sans", sans-serif;
+        background-color: #1e1e1e;
+        color: #fff;
+        scroll-behavior: smooth;
+      }
+      body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      img,
+      picture,
+      video,
+      canvas,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      }
+
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        overflow-wrap: break-word;
+      }
+      p {
+        line-height: 22px;
+        letter-spacing: 0.07em;
+      }
+      #root,
+      #__next {
+        isolation: isolate;
+      }
+      .separator {
+        margin: auto;
+      }
+      header {
+        margin-top: 2.75rem;
+        margin-bottom: 2.75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      header img {
+        width: 4rem;
+      }
+      header h1 {
+        font-weight: 900;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 1rem;
+        line-height: 91%;
+        letter-spacing: 0.175em;
+      }
+      header h1 span {
+        display: block;
+        color: var(--primary);
+      }
+      footer {
+        text-align: center;
+        padding: 2rem 4rem;
+      }
+      footer img {
+        margin: auto;
+      }
+      footer .logo {
+        width: 120px;
+        margin: auto;
+        margin-bottom: 16px;
+      }
+      footer .links {
+        margin-bottom: 8px;
+      }
+      footer .links a {
+        color: inherit;
+        font-size: 12px;
+      }
+      footer .copyrights {
+        font-size: 12px;
+      }
+      .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .text-primary {
+        color: var(--primary);
+      }
+      .button {
+        padding: 0.75rem 1.5rem;
+        background: var(--primary);
+        color: #111827;
+        border: none;
+        display: inline-block;
+        font-weight: 800;
+        font-size: 0.875rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none;
+      }
+      .button:focus {
+        box-shadow: 0 0 0 3px rgb(174 204 83 / 50%);
+      }
+      .title {
+        font-weight: 900;
+        font-size: 0.875rem;
+        line-height: 1rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: #adcb53;
+        margin-bottom: 2rem;
+      }
+      @media (min-width: 768px) {
+        .container {
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
+        header {
+          margin-top: 6rem;
+          margin-bottom: 6rem;
+        }
+        header img {
+          width: 6rem;
+        }
+        header h1 {
+          font-size: 2.75rem;
+          margin-top: 2rem;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .container {
+          max-width: 64rem;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    </style>
+  </body>
+</html>

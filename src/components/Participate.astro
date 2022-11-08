@@ -1,4 +1,7 @@
 <section class="container">
+  <div class="separator">
+    <img src="/images/separator.svg" alt="" />
+  </div>
   <div class="content">
     <h1 class="title">Do you want to help make a difference in the world?</h1>
     <p>
@@ -20,12 +23,16 @@
 </section>
 <style>
   section {
-    background-color: #181818;
-    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .separator {
+    margin: 4rem 0;
+  }
+  .separator img {
+    margin: auto;
   }
   .content {
-    padding: 4rem 0;
-    max-width: 586px;
+    max-width: 686px;
     margin: 0 auto;
   }
   p {
@@ -36,27 +43,6 @@
       border-radius: 6rem 0px;
       position: relative;
       margin-bottom: 6rem;
-    }
-    section::before,
-    section::after {
-      content: "";
-      position: absolute;
-
-      width: 38px;
-      height: 69px;
-      background-image: url("images/participate.svg");
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    section::before {
-      top: 2rem;
-      right: 2rem;
-    }
-    section::after {
-      bottom: 2rem;
-      left: 2rem;
-      transform: rotate(180deg);
     }
   }
 </style>

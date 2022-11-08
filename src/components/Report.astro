@@ -16,16 +16,8 @@ const data = [
 ---
 
 <section class="container">
-  <div>
-    <h1 class="title">Why the report will strengthen our industry</h1>
-    <p class="text">
-      While the green software ecosystem is growing rapidly, it is also
-      fragmented and in need of greater visibility. The State of Green Software
-      Report is an important milestone towards integrating, coordinating,
-      expanding and mainstreaming green software across all digital industries.
-    </p>
-    <p>This report will be an immediately actionable tool, at scale:</p>
-  </div>
+  <h1 class="title">Who should read this report?</h1>
+
   <div class="items-wrapper">
     {
       data.map((item) => (
@@ -41,11 +33,14 @@ const data = [
   section {
     margin-bottom: 4rem;
   }
+  h1 {
+    text-align: center;
+  }
   .text {
     margin-bottom: 2rem;
   }
   .items-wrapper {
-    margin-top: 2rem;
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -57,12 +52,11 @@ const data = [
     align-items: flex-start;
   }
   @media (min-width: 768px) {
-    section {
+    .items-wrapper {
+      /* flex-direction: row;
+      gap: 4rem; */
       display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 8rem;
-      align-items: center;
-      margin-bottom: 7rem;
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 </style>

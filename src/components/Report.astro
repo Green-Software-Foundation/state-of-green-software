@@ -2,15 +2,15 @@
 const data = [
   {
     image: "/images/developers.svg",
-    text: "for developers seeking to measure and improve the carbon footprint of their software",
+    text: "Developers seeking to measure and improve the carbon footprint of their software",
   },
   {
     image: "/images/business.svg",
-    text: "for business, technical and product leaders making investment decisions, technology choices and strategic calls",
+    text: "Business, technical and product leaders making investment decisions, technology choices and strategic calls",
   },
   {
     image: "/images/institutions.svg",
-    text: "for guiding institutions and thought leaders setting global and national standards, regulations and policy objectives",
+    text: "Guiding institutions and thought leaders setting global and national standards, regulations and policy objectives",
   },
 ];
 ---
@@ -33,28 +33,30 @@ const data = [
   section {
     margin-bottom: 4rem;
   }
-  h1 {
-    text-align: center;
-  }
+
   .text {
     margin-bottom: 2rem;
   }
   .items-wrapper {
-    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
   .item {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: flex-start;
+    gap: 2rem;
+    align-items: center;
   }
   @media (min-width: 768px) {
+    section {
+      margin-bottom: 10rem;
+    }
+    .item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
     .items-wrapper {
-      /* flex-direction: row;
-      gap: 4rem; */
       display: grid;
       grid-template-columns: repeat(3, 1fr);
     }

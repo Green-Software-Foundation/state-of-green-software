@@ -1,4 +1,8 @@
-<section id="get-report">
+---
+const { title, containerClass } = Astro.props;
+---
+
+<section id="get-report" class={containerClass}>
   <!-- Begin Mailchimp Signup Form -->
   <div class="container">
     <div id="mc_embed_signup" class="form-wrapper">
@@ -15,7 +19,7 @@
           <div>
             <img src="/images/newsletter.svg" alt="Newsletter" />
           </div>
-          <h1>Sign up to receive the report</h1>
+          <h1>{title}</h1>
 
           <div class="mc-field-group">
             <input
@@ -99,6 +103,9 @@
 </section>
 <style>
   section {
+    margin-bottom: 2rem;
+  }
+  .signup {
     margin-bottom: 2rem;
   }
   .form-wrapper {

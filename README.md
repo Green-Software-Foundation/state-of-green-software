@@ -6,7 +6,7 @@ The State of Green Software Report will map and analyse comprehensively the stat
 
 Documents and sections will be added to the [docs]() directory as they are completed.
 
-This is a project run through the [Policy Working Group](https://grnsft.org/policy-wg) at the [Green Software Foundation](https://greensoftware.foundation) and can be viewed through https://TODO.greensoftware.foundation
+This is a project run through the [Policy Working Group](https://grnsft.org/policy-wg) at the [Green Software Foundation](https://greensoftware.foundation) and can be viewed through https://stateof.greensoftware.org/
 
 ## Copyright
 

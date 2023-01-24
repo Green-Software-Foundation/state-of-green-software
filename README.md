@@ -1,12 +1,8 @@
-Follow the instructions in [CONFIGURE.md](CONFIGURE.md) to learn how to configure this template repository.
-
 # State of Green Software
 
 The State of Green Software Report will map and analyse comprehensively the state of the green software ecosystem.
 
-Documents and sections will be added to the [docs]() directory as they are completed.
-
-This is a project run through the [Policy Working Group](https://grnsft.org/policy-wg) at the [Green Software Foundation](https://greensoftware.foundation) and can be viewed through https://stateof.greensoftware.org/
+This is a project run through the [Policy Working Group](https://policy.greensoftware.foundation/) at the [Green Software Foundation](https://greensoftware.foundation) and can be viewed through https://stateof.greensoftware.org/
 
 ## Copyright
 
@@ -18,15 +14,13 @@ No Patent License.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENCE](LICENCE) file for details.
+This project is licensed under the MIT License.
 
 ## Contributing
 
 This project is open source and welcomes public contribution via issues, discussions and pull requests.
 
 Members of the Green Software Foundation also meet and discuss aspects of this project either in-person or virtual via email or video.
-
-Instructions for how to contribute to this project can be found in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 ## Editing Content
 

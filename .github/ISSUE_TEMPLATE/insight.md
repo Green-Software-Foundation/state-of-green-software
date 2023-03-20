@@ -9,8 +9,8 @@ assignees: ''
 
 **Insight lifecycle**
 
-- [] Draft is created (gdoc)
-- [] Reviewed by editor (gdoc)
-- [] Content reviewed by Marketing (gdoc)
-- [] Graphics created (gdoc -> assets)
-- [] Published (gdoc -> md)
+- [ ] Draft is created (gdoc)
+- [ ] Reviewed by editor (gdoc)
+- [ ] Content reviewed by Marketing (gdoc)
+- [ ] Graphics created (gdoc -> assets)
+- [ ] Published (gdoc -> md)

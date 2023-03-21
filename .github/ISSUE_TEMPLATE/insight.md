@@ -7,6 +7,8 @@ assignees: ''
 
 ---
 
+Parent issue #101
+
 **Insight lifecycle**
 
 - [ ] Draft is created (gdoc)

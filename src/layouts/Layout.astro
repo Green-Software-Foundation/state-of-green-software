@@ -66,16 +66,11 @@ import "@fontsource/nunito-sans/900.css";
     </script>
   </head>
   <body>
-    <header>
-      <div><img src="/images/logo.svg" alt="SoGS Logo" /></div>
-      <h1>State of <span> green software</span></h1>
-    </header>
-    <main>
-      <slot />
-    </main>
+    <slot />
     <footer>
       <div class="logo">
-        <img src="/images/logo-gsf.svg" alt="GSF Logo" />
+        <a href="/">
+        <img src="/images/logo-gsf-colored.svg" alt="GSF Logo" /></a>
       </div>
       <div class="links">
         <a
@@ -97,6 +92,33 @@ import "@fontsource/nunito-sans/900.css";
     <style is:global>
       :root {
         --primary: #aecc53;
+        --primary-lightest-2: #f4f6f8;
+
+        --secondary: #006d68;
+        --secondary-lightest-2: #fbfcf6;
+
+        --gray-darkest: #1e1e1e;
+
+        --tag-knowledge: #aecc53;
+        --tag-knowledge-text: var(--gray-darkest);
+        --tag-tooling: #83993e;
+        --tag-tooling-text: white;
+        --tag-culture: #d7e6a9;
+        --tag-culture-text: var(--gray-darkest);
+
+        --tag-developer: #91a7bc;
+        --tag-developer-text: var(--gray-darkest);
+        --tag-leadership: #225079;
+        --tag-leadership-text: white;
+
+        --tag-awareness: #1f2937;
+        --tag-awareness-text: white;
+        --tag-adoption: #374151;
+        --tag-adoption-text: white;
+        --tag-friction: #4b5563;
+        --tag-friction-text: white;
+        --tag-enabler: #6b7280;
+        --tag-enabler-text: white;
       }
       *,
       *::before,
@@ -111,11 +133,10 @@ import "@fontsource/nunito-sans/900.css";
       html,
       body {
         height: 100%;
+        background-color: var(secondary-lightest-2);
       }
       html {
         font-family: "Nunito Sans", sans-serif;
-        background-color: #1e1e1e;
-        color: #fff;
         scroll-behavior: smooth;
       }
       body {
@@ -150,7 +171,6 @@ import "@fontsource/nunito-sans/900.css";
       }
       p {
         line-height: 22px;
-        letter-spacing: 0.07em;
       }
       #root,
       #__next {
@@ -159,30 +179,7 @@ import "@fontsource/nunito-sans/900.css";
       .separator {
         margin: auto;
       }
-      header {
-        margin-top: 2.75rem;
-        margin-bottom: 2.75rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-      header img {
-        width: 4rem;
-      }
-      header h1 {
-        font-weight: 900;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        text-align: center;
-        margin-top: 1rem;
-        line-height: 91%;
-        letter-spacing: 0.175em;
-      }
-      header h1 span {
-        display: block;
-        color: var(--primary);
-      }
+
       footer {
         text-align: center;
         padding: 2rem 4rem;
@@ -215,7 +212,7 @@ import "@fontsource/nunito-sans/900.css";
       .button {
         padding: 0.75rem 1.5rem;
         background: var(--primary);
-        color: #111827;
+        color: var(--gray-darkest);
         border: none;
         display: inline-block;
         font-weight: 800;
@@ -223,6 +220,7 @@ import "@fontsource/nunito-sans/900.css";
         cursor: pointer;
         transition: all 0.2s ease-in-out;
         text-decoration: none;
+        border-radius: 0.5rem;
       }
       .button:focus {
         box-shadow: 0 0 0 3px rgb(174 204 83 / 50%);
@@ -240,17 +238,6 @@ import "@fontsource/nunito-sans/900.css";
         .container {
           padding-left: 2rem;
           padding-right: 2rem;
-        }
-        header {
-          margin-top: 6rem;
-          margin-bottom: 6rem;
-        }
-        header img {
-          width: 6rem;
-        }
-        header h1 {
-          font-size: 2.75rem;
-          margin-top: 2rem;
         }
       }
 

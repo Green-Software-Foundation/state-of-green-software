@@ -1,22 +1,89 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Hero from "../components/Hero.astro";
-import Details from "../components/Details.astro";
-import Info from "../components/Info.astro";
-import Benefit from "../components/Benefit.astro";
-import Form from "../components/Form.astro";
-import Information from "../components/Information.astro";
-import Report from "../components/Report.astro";
-import Participate from "../components/Participate.astro";
+import InsightsCatalog from "../components/InsightsCatalog";
+import type { Insight } from "../components/types";
+import type { MarkdownInstance } from "astro";
+const insights = await Astro.glob<MarkdownInstance<Insight>>("./insights/*.{md,mdx}");
 ---
 
 <Layout>
-  <Hero />
-  <!-- <Details /> -->
-  <!-- <Participate /> -->
-  <Info />
-  <Information />
-  <Report />
-  <Benefit />
-  <Form title="Sign up to receive the report" />
+  <header>
+    <div class="logo-wrapper">
+      <img src="/images/logo.svg" alt="SoGS Logo" />
+    </div>
+    <div class="content">
+      <h1>Title goes here</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis
+        metus nisl, eu dignissim augue auctor nec. Phasellus maximus efficitur
+        imperdiet. Donec nec finibus sem.
+      </p>
+      <div class="by-wrapper">
+        <span>By</span>
+        <img src="/images/logo-gsf.svg" alt="GSF Logo" />
+      </div>
+    </div>
+    <div class="btns-wrapper">
+      <button class="button">Why Green Software</button>
+      <button class="button">Business Case for Green Software</button>
+      <button class="button">Theory of Change</button>
+    </div>
+  </header>
+  <main>
+
+    <InsightsCatalog insights={insights} />
+  </main>
 </Layout>
+
+<style>
+  header {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--gray-darkest);
+  }
+  .logo-wrapper {
+    margin-bottom: 3rem;
+  }
+  .logo-wrapper img {
+    margin: auto;
+  }
+  header .content {
+    max-width: 440px;
+    margin: auto;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+
+  header p {
+    color: var(--primary-lightest-2);
+  }
+  .by-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+    color: white;
+  }
+  .by-wrapper img {
+    width: 100px;
+  }
+  .btns-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  main {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+</style>

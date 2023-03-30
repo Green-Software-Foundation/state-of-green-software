@@ -1,0 +1,53 @@
+.container {
+  margin-bottom: 4rem;
+}
+.title {
+  color: var(--secondary);
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.input_wrapper {
+  position: relative;
+  max-width: 36rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.input_wrapper svg {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: var(--secondary);
+}
+.input_wrapper input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 0.5rem;
+  outline: none;
+  background: #ffffff;
+  box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24),
+    0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+  border-radius: 8px;
+}
+.input_wrapper input::placeholder {
+  opacity: 0.7;
+  font-size: 0.875rem;
+}
+.cards_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 1rem;
+  margin-bottom: 2rem;
+}
+.btn_wrapper {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}

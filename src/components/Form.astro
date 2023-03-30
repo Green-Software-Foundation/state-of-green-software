@@ -103,7 +103,9 @@ const { title, containerClass } = Astro.props;
 </section>
 <style>
   section {
+    margin-top: 2rem;
     margin-bottom: 2rem;
+    color:white;
   }
   .signup {
     margin-bottom: 2rem;
@@ -122,8 +124,9 @@ const { title, containerClass } = Astro.props;
     width: 126px;
   }
   h1 {
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.25rem !important;
+    font-weight: bold !important;
+    margin-bottom: 0.75rem !important;
   }
   .form-content {
     max-width: 24rem;
@@ -153,6 +156,22 @@ const { title, containerClass } = Astro.props;
     font-size: 0.75rem;
   }
   .button {
+        padding: 0.75rem 1.5rem;
+        background-color: var(--primary) !important;
+        color: var(--gray-darkest);
+        border: none;
+        display: inline-block;
+        font-weight: 800;
+        font-size: 0.875rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none;
+        border-radius: 0.5rem;
+      }
+      .button:focus {
+        box-shadow: 0 0 0 3px rgb(174 204 83 / 50%);
+      }
+  .button {
     margin-top: 1rem;
   }
   :global(#mc_embed_signup div.mce_inline_error) {
@@ -168,7 +187,6 @@ const { title, containerClass } = Astro.props;
   @media (min-width: 768px) {
     section {
       position: relative;
-      margin-bottom: 8rem;
       overflow: hidden;
     }
     .form-wrapper {
@@ -177,7 +195,7 @@ const { title, containerClass } = Astro.props;
 
       z-index: 1;
     }
-    section::before {
+    /* section::before {
       content: "";
       position: absolute;
       bottom: 0;
@@ -204,7 +222,7 @@ const { title, containerClass } = Astro.props;
       user-select: none;
       pointer-events: none;
       z-index: 0;
-    }
+    } */
     form {
       padding: 2rem;
     }

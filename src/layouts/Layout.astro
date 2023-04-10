@@ -70,7 +70,8 @@ import "@fontsource/nunito-sans/900.css";
     <footer>
       <div class="logo">
         <a href="/">
-        <img src="/images/logo-gsf-colored.svg" alt="GSF Logo" /></a>
+          <img src="/images/logo-gsf-colored.svg" alt="GSF Logo" /></a
+        >
       </div>
       <div class="links">
         <a
@@ -85,7 +86,8 @@ import "@fontsource/nunito-sans/900.css";
         >
       </div>
       <p class="copyrights">
-        Copyright © 2022 Joint Development Foundation Projects, LLC, <br />
+        Copyright © {new Date().getFullYear()} Joint Development Foundation Projects,
+        LLC, <br />
         Green Software Foundation Series
       </p>
     </footer>
@@ -133,7 +135,7 @@ import "@fontsource/nunito-sans/900.css";
       html,
       body {
         height: 100%;
-        background-color: var(secondary-lightest-2);
+        background-color: var(--secondary-lightest-2);
       }
       html {
         font-family: "Nunito Sans", sans-serif;

@@ -2,7 +2,7 @@
 const { frontmatter } = Astro.props;
 import InsightCard from "../components/InsightCard.astro";
 import Form from "../components/Form.astro";
-const { title } = frontmatter;
+const { title, image } = frontmatter;
 import "../styles/tailwind.css";
 ---
 
@@ -68,16 +68,18 @@ import "../styles/tailwind.css";
     </script>
   </head>
   <body>
-    <div class="max-w-3xl mx-auto px-8 ">
+    <div class="max-w-3xl mx-auto px-8">
       <header>
-        <a href="/">
-        <img src="/images/logo-alt.svg" alt="SoGS Logo" /></a>
+        <a href="/"> <img src="/images/logo-alt.svg" alt="SoGS Logo" /></a>
       </header>
       <InsightCard title={title} />
+      <div class="main-img-wrapper">
+        <img src={`/images/insights/${image}`} alt="" srcset="" />
+      </div>
       <article class="prose max-w-none">
         <slot />
       </article>
-      <Form title="Sign up to receive the report"/>
+      <Form title="Sign up to receive the report" />
       <footer>
         <div class="logo">
           <img src="/images/logo-gsf-colored.svg" alt="GSF Logo" />
@@ -96,12 +98,13 @@ import "../styles/tailwind.css";
           >
         </div>
         <p class="copyrights">
-          Copyright © 2022 Joint Development Foundation Projects, LLC, <br />
+          Copyright © {new Date().getFullYear()} Joint Development Foundation Projects,
+          LLC, <br />
           Green Software Foundation Series
         </p>
       </footer>
     </div>
-    <style >
+    <style>
       :root {
         --primary: #aecc53;
         --primary-lightest-2: #f4f6f8;
@@ -110,14 +113,21 @@ import "../styles/tailwind.css";
         --secondary-lightest-2: #fbfcf6;
 
         --gray-darkest: #1e1e1e;
-
       }
-     
+      body {
+        background-color: var(--secondary-lightest-2);
+      }
       header {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 4rem 2rem;
+      }
+      .main-img-wrapper {
+        margin-bottom: 2rem;
+      }
+      .main-img-wrapper img {
+        border-radius: 0.5rem;
       }
       footer {
         text-align: center;

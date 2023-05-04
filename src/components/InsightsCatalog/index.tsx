@@ -11,7 +11,7 @@ const InsightsCatalog = ({ insights }: Props) => {
   return (
     <section className={Styles.container}>
       <h2 className={Styles.title}>Insights</h2>
-      <div>
+      {/* <div>
         <div className={Styles.input_wrapper}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ const InsightsCatalog = ({ insights }: Props) => {
             // onChange={onSearch}
           />
         </div>
-      </div>
+      </div> */}
       <div className={Styles.cards_wrapper}>
         {insights.map(({ url, frontmatter: insight }) => {
           if (url === undefined) return;

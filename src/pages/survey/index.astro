@@ -1,0 +1,314 @@
+---
+import "../../styles/tailwind.css";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <!-- Primary Meta Tags -->
+    <title>State of Green Software</title>
+    <meta name="title" content="State of Green Software" />
+    <meta
+      name="description"
+      content="The State of Green Software will be the first report to map the new green software ecosystem, from key stakeholders to regulatory frameworks, from impact metrics to academic literature, open source tooling to actionable design patterns."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://stateof.greensoftware.foundation/"
+    />
+    <meta property="og:title" content="State of Green Software" />
+    <meta
+      property="og:description"
+      content="The State of Green Software will be the first report to map the new green software ecosystem, from key stakeholders to regulatory frameworks, from impact metrics to academic literature, open source tooling to actionable design patterns."
+    />
+    <meta
+      property="og:image"
+      content="https://stateof.greensoftware.foundation/images/og-image.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://stateof.greensoftware.foundation/"
+    />
+    <meta property="twitter:title" content="State of Green Software" />
+    <meta
+      property="twitter:description"
+      content="The State of Green Software will be the first report to map the new green software ecosystem, from key stakeholders to regulatory frameworks, from impact metrics to academic literature, open source tooling to actionable design patterns."
+    />
+    <meta
+      property="twitter:image"
+      content="https://stateof.greensoftware.foundation/images/og-image.png"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4X7F9S319R"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        // @ts-ignore: Unreachable code error
+        dataLayer.push(arguments);
+      }
+      // @ts-ignore: Unreachable code error
+      gtag("js", new Date());
+      // @ts-ignore: Unreachable code error
+      gtag("config", "G-4X7F9S319R");
+    </script>
+  </head>
+  <body>
+    <div class="max-w-3xl mx-auto px-8">
+      <header>
+        <a href="/"> <img src="/images/logo-alt.svg" alt="SoGS Logo" /></a>
+      </header>
+      <div id="wrapper" class="prose"></div>
+      <footer>
+        <div class="logo">
+          <img src="/images/logo-gsf-colored.svg" alt="GSF Logo" />
+        </div>
+        <div class="links">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://greensoftware.foundation/policy/terms"
+            >Privacy Policy</a
+          > | <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://greensoftware.foundation/code-of-conduct"
+            >Code of Conduct</a
+          >
+        </div>
+        <p class="copyrights">
+          Copyright © {new Date().getFullYear()} Joint Development Foundation Projects,
+          LLC, <br />
+          Green Software Foundation Series
+        </p>
+      </footer>
+    </div>
+    <style>
+      :root {
+        --primary: #aecc53;
+        --primary-lightest-2: #f4f6f8;
+
+        --secondary: #006d68;
+        --secondary-lightest-2: #fbfcf6;
+
+        --gray-darkest: #1e1e1e;
+      }
+      body {
+        background-color: var(--secondary-lightest-2);
+      }
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 2rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem 4rem;
+      }
+      footer img {
+        margin: auto;
+      }
+      footer .logo {
+        width: 120px;
+        margin: auto;
+        margin-bottom: 16px;
+      }
+      footer .links {
+        margin-bottom: 8px;
+      }
+      footer .links a {
+        color: inherit;
+        font-size: 12px;
+      }
+      footer .copyrights {
+        font-size: 12px;
+      }
+    </style>
+    <style is:global>
+      .chart-card {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+        background: #ffffff;
+        box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24),
+          0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+        border-radius: 8px;
+        color: initial;
+      }
+      @media (max-width: 400px) {
+        .chart-card {
+          padding: 0.5rem;
+        }
+      }
+    </style>
+    <script>
+      import surveryResults from "../../survey-results.json";
+      import Chart from "chart.js/auto";
+      // Get the wrapper element and add new div for each survey result and use result.data to populate the chart with chartjs
+      const wrapper = document.getElementById("wrapper") as HTMLCanvasElement;
+      surveryResults.forEach((result) => {
+        const div = document.createElement("div");
+        div.classList.add("chart-card");
+        // Add H1 with the question
+        const h1 = document.createElement("h1");
+        h1.innerText = result.question;
+        h1.classList.add("text-xl", "font-bold");
+        div.appendChild(h1);
+
+        const canvas = document.createElement("canvas");
+        canvas.classList.add("chart");
+        div.appendChild(canvas);
+        wrapper.appendChild(div);
+        const ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
+        new Chart(ctx, {
+          type: "bar",
+          data: {
+            labels: result.data.map((row) => row.answer_choices),
+            datasets: [
+              {
+                data: result.data.map((row) => row.response_percent),
+                backgroundColor: ["#aecc53", "#006d68", "#1e1e1e"],
+                maxBarThickness: 30,
+              },
+            ],
+          },
+          options: {
+            indexAxis: "y",
+            responsive: true,
+            aspectRatio: 3 / 2,
+            maintainAspectRatio: true,
+            plugins: {
+              legend: {
+                display: false,
+              },
+              tooltip: {
+                callbacks: {
+                  label: function (context) {
+                    var label = context.dataset.label || "";
+                    if (label) {
+                      label += ": ";
+                    }
+                    if (context.parsed.y !== null) {
+                      label += new Intl.NumberFormat("en-US", {
+                        style: "percent",
+                      }).format(context.parsed.x / 100);
+                    }
+                    return label;
+                  },
+                },
+              },
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+              },
+              x: {
+                ticks: {
+                  callback: function (value, index, values) {
+                    return value + "%";
+                  },
+                },
+              },
+            },
+          },
+        });
+      });
+
+      // Add one more graph with the following Q23data
+      const Q23data = {
+        question:
+          "How would you rank the following in order of importance? You can drag and drop the options to order them with the top one being the most important (1 = the most important).",
+        answered: 1718,
+        skipped: 473,
+        data: [
+          {
+            answer_choices: "Security",
+            responses: 928,
+            response_percent: 54.24,
+            score: 4.18,
+          },
+          {
+            answer_choices: "Reliability",
+            responses: 244,
+            response_percent: 14.27,
+            score: 3.36,
+          },
+          {
+            answer_choices: "Sustainability",
+            responses: 284,
+            response_percent: 16.56,
+            score: 2.84,
+          },
+          {
+            answer_choices: "Performance",
+            responses: 137,
+            response_percent: 8.0,
+            score: 2.65,
+          },
+          {
+            answer_choices: "Cost",
+            responses: 125,
+            response_percent: 7.3,
+            score: 1.98,
+          },
+        ],
+      };
+      const div = document.createElement("div");
+      div.classList.add("chart-card");
+      // Add H1 with the question
+      const h1 = document.createElement("h1");
+      h1.innerText = Q23data.question;
+      h1.classList.add("text-xl", "font-bold");
+      div.appendChild(h1);
+
+      const canvas = document.createElement("canvas");
+      canvas.classList.add("chart");
+      div.appendChild(canvas);
+      wrapper.appendChild(div);
+      const ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: Q23data.data.map((row) => row.answer_choices),
+          datasets: [
+            {
+              data: Q23data.data.map((row) => row.score),
+              backgroundColor: ["#aecc53", "#006d68", "#1e1e1e"],
+              maxBarThickness: 30,
+            },
+          ],
+        },
+        options: {
+          indexAxis: "y",
+          responsive: true,
+          aspectRatio: 3 / 2,
+          maintainAspectRatio: true,
+          plugins: {
+            legend: {
+              display: false,
+            },
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

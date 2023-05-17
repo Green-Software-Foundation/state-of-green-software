@@ -1,0 +1,719 @@
+[
+  {
+    "question": "What kind of software practitioner are you?",
+    "answered": 2191,
+    "skipped": 0,
+    "data": [
+      {
+        "answer_choices": "Developer / Programmer / Software Engineer",
+        "response_percent": 38.7,
+        "responses": 848
+      },
+      {
+        "answer_choices": "Team Lead",
+        "response_percent": 13.14,
+        "responses": 288
+      },
+      {
+        "answer_choices": "DevOps Engineer / Infrastructure Developer",
+        "response_percent": 4.06,
+        "responses": 89
+      },
+      {
+        "answer_choices": "Architect",
+        "response_percent": 11.91,
+        "responses": 261
+      },
+      {
+        "answer_choices": "Technical Support",
+        "response_percent": 2.19,
+        "responses": 48
+      },
+      {
+        "answer_choices": "UX / UI Designer",
+        "response_percent": 4.15,
+        "responses": 91
+      },
+      {
+        "answer_choices": "Data Analyst / Data Engineer / Data Scientist",
+        "response_percent": 9.17,
+        "responses": 201
+      },
+      {
+        "answer_choices": "CIO / CEO / CTO",
+        "response_percent": 3.65,
+        "responses": 80
+      },
+      {
+        "answer_choices": "Tester / QA Engineer",
+        "response_percent": 2.78,
+        "responses": 61
+      },
+      {
+        "answer_choices": "Other (please specify)",
+        "response_percent": 10.22,
+        "responses": 224
+      }
+    ]
+  },
+  {
+    "question": "What types of applications do you primarily build?",
+    "answered": 2191,
+    "skipped": 0,
+    "data": [
+      {
+        "answer_choices": "Cloud",
+        "response_percent": 57.01,
+        "responses": 1249
+      },
+      {
+        "answer_choices": "Mobile",
+        "response_percent": 17.62,
+        "responses": 386
+      },
+      {
+        "answer_choices": "Desktop",
+        "response_percent": 23.09,
+        "responses": 506
+      },
+      {
+        "answer_choices": "IoT",
+        "response_percent": 8.12,
+        "responses": 178
+      },
+      {
+        "answer_choices": "Networking",
+        "response_percent": 5.8,
+        "responses": 127
+      },
+      {
+        "answer_choices": "Web",
+        "response_percent": 52.76,
+        "responses": 1156
+      },
+      {
+        "answer_choices": "Machine learning",
+        "response_percent": 14.61,
+        "responses": 320
+      },
+      {
+        "answer_choices": "N/A",
+        "response_percent": 5.71,
+        "responses": 125
+      },
+      {
+        "answer_choices": "Other",
+        "response_percent": 6.02,
+        "responses": 132
+      }
+    ]
+  },
+  {
+    "question": "How many years of professional software development experience do you have?",
+    "answered": 2191,
+    "skipped": 0,
+    "data": [
+      {
+        "answer_choices": "Less than 1 year",
+        "response_percent": 7.39,
+        "responses": 162
+      },
+      {
+        "answer_choices": "1-2 years",
+        "response_percent": 10.73,
+        "responses": 235
+      },
+      {
+        "answer_choices": "3-5 years",
+        "response_percent": 19.67,
+        "responses": 431
+      },
+      {
+        "answer_choices": "6-10 years",
+        "response_percent": 16.39,
+        "responses": 359
+      },
+      {
+        "answer_choices": "11-16 years",
+        "response_percent": 15.61,
+        "responses": 342
+      },
+      {
+        "answer_choices": "16+ years",
+        "response_percent": 23.73,
+        "responses": 520
+      },
+      {
+        "answer_choices": "No experience",
+        "response_percent": 6.48,
+        "responses": 142
+      }
+    ]
+  },
+  {
+    "question": "What is your age?",
+    "answered": 2191,
+    "skipped": 0,
+    "data": [
+      {
+        "answer_choices": "18-24",
+        "response_percent": 6.8,
+        "responses": 149
+      },
+      {
+        "answer_choices": "25-34",
+        "response_percent": 37.65,
+        "responses": 825
+      },
+      {
+        "answer_choices": "35-44",
+        "response_percent": 33.82,
+        "responses": 741
+      },
+      {
+        "answer_choices": "45-54",
+        "response_percent": 16.07,
+        "responses": 352
+      },
+      {
+        "answer_choices": "55-64",
+        "response_percent": 5.07,
+        "responses": 111
+      },
+      {
+        "answer_choices": "65+",
+        "response_percent": 0.59,
+        "responses": 13
+      }
+    ]
+  },
+  {
+    "question": "Do you consider yourself to be a minoritized individual? This may include ethnicity, race, disability, religion, sexual orientation, gender identity, residence status, neurodiversity, or other traits.",
+    "answered": 2191,
+    "skipped": 0,
+    "data": [
+      {
+        "answer_choices": "Yes",
+        "response_percent": 23.23,
+        "responses": 509
+      },
+      {
+        "answer_choices": "No",
+        "response_percent": 67.73,
+        "responses": 1484
+      },
+      {
+        "answer_choices": "Prefer not to answer",
+        "response_percent": 9.04,
+        "responses": 198
+      }
+    ]
+  },
+  {
+    "question": "What is your gender identity?",
+    "answered": 2191,
+    "skipped": 0,
+    "data": [
+      {
+        "answer_choices": "Man",
+        "response_percent": 70.01,
+        "responses": 1534
+      },
+      {
+        "answer_choices": "Woman",
+        "response_percent": 24.55,
+        "responses": 538
+      },
+      {
+        "answer_choices": "Non-Binary",
+        "response_percent": 0.64,
+        "responses": 14
+      },
+      {
+        "answer_choices": "Prefer not to answer",
+        "response_percent": 4.43,
+        "responses": 97
+      },
+      {
+        "answer_choices": "Other",
+        "response_percent": 0.37,
+        "responses": 8
+      }
+    ]
+  },
+  {
+    "question": "Is sustainability or green software part of your official role?",
+    "answered": 2191,
+    "skipped": 0,
+    "data": [
+      {
+        "answer_choices": "Yes",
+        "response_percent": 26.02,
+        "responses": 570
+      },
+      {
+        "answer_choices": "No",
+        "response_percent": 73.98,
+        "responses": 1621
+      }
+    ]
+  },
+  {
+    "question": "What is the size of the company you currently work for?",
+    "answered": 2191,
+    "skipped": 0,
+    "data": [
+      {
+        "answer_choices": "1-999",
+        "response_percent": 24.19,
+        "responses": 530
+      },
+      {
+        "answer_choices": "1000-4999",
+        "response_percent": 15.38,
+        "responses": 337
+      },
+      {
+        "answer_choices": "5000-49999",
+        "response_percent": 29.07,
+        "responses": 637
+      },
+      {
+        "answer_choices": "50000+",
+        "response_percent": 31.36,
+        "responses": 687
+      }
+    ]
+  },
+  {
+    "question": "How concerned are you about climate change?",
+    "answered": 2125,
+    "skipped": 66,
+    "data": [
+      {
+        "answer_choices": "Very concerned",
+        "response_percent": 62.02,
+        "responses": 1318
+      },
+      {
+        "answer_choices": "Concerned",
+        "response_percent": 30.26,
+        "responses": 643
+      },
+      {
+        "answer_choices": "A little concerned",
+        "response_percent": 6.16,
+        "responses": 131
+      },
+      {
+        "answer_choices": "Not at all",
+        "response_percent": 1.55,
+        "responses": 33
+      }
+    ]
+  },
+  {
+    "question": "What is your level of familiarity with green software?",
+    "answered": 2125,
+    "skipped": 66,
+    "data": [
+      {
+        "answer_choices": "Very familiar",
+        "response_percent": 13.55,
+        "responses": 288
+      },
+      {
+        "answer_choices": "Somewhat familiar",
+        "response_percent": 53.51,
+        "responses": 1137
+      },
+      {
+        "answer_choices": "No familiarity",
+        "response_percent": 32.94,
+        "responses": 700
+      }
+    ]
+  },
+  {
+    "question": "Are you interested in or involved with other sustainability initiatives at your workplace?",
+    "answered": 2125,
+    "skipped": 66,
+    "data": [
+      {
+        "answer_choices": "Interested and involved",
+        "response_percent": 29.88,
+        "responses": 635
+      },
+      {
+        "answer_choices": "Interested but not yet involved",
+        "response_percent": 60.56,
+        "responses": 1287
+      },
+      {
+        "answer_choices": "Not interested or involved",
+        "response_percent": 4.94,
+        "responses": 105
+      },
+      {
+        "answer_choices": "My workplace has no sustainability initiatives",
+        "response_percent": 4.61,
+        "responses": 98
+      }
+    ]
+  },
+  {
+    "question": "Do you or your organization measure the environmental impact of your software?",
+    "answered": 1949,
+    "skipped": 242,
+    "data": [
+      {
+        "answer_choices": "Always",
+        "response_percent": 15.55,
+        "responses": 303
+      },
+      {
+        "answer_choices": "Sometimes",
+        "response_percent": 49.31,
+        "responses": 961
+      },
+      {
+        "answer_choices": "Never",
+        "response_percent": 35.15,
+        "responses": 685
+      }
+    ]
+  },
+  {
+    "question": "Do you take any steps to reduce the environmental impact of your software?",
+    "answered": 1949,
+    "skipped": 242,
+    "data": [
+      {
+        "answer_choices": "Always",
+        "response_percent": 11.49,
+        "responses": 224
+      },
+      {
+        "answer_choices": "Sometimes",
+        "response_percent": 44.89,
+        "responses": 875
+      },
+      {
+        "answer_choices": "Never",
+        "response_percent": 30.32,
+        "responses": 591
+      },
+      {
+        "answer_choices": "N/A",
+        "response_percent": 13.29,
+        "responses": 259
+      }
+    ]
+  },
+  {
+    "question": "Which of the following green software principles do you incorporate into your development projects?",
+    "answered": 1949,
+    "skipped": 242,
+    "data": [
+      {
+        "answer_choices": "I create software that is carbon-efficient",
+        "response_percent": 11.08,
+        "responses": 216
+      },
+      {
+        "answer_choices": "I create software that is energy-efficient",
+        "response_percent": 24.73,
+        "responses": 482
+      },
+      {
+        "answer_choices": "I create carbon-aware software (e.g. I shift workloads to times and locations with clean energy supply)",
+        "response_percent": 8.0,
+        "responses": 156
+      },
+      {
+        "answer_choices": "I create software that can run on older devices/hardware",
+        "response_percent": 20.93,
+        "responses": 408
+      },
+      {
+        "answer_choices": "I maximize the utilization of my hardware",
+        "response_percent": 35.2,
+        "responses": 686
+      },
+      {
+        "answer_choices": "I minimize the amount of data my software sends/receives",
+        "response_percent": 44.59,
+        "responses": 869
+      },
+      {
+        "answer_choices": "I optimize my code by measuring its energy consumption / carbon footprint",
+        "response_percent": 16.01,
+        "responses": 312
+      },
+      {
+        "answer_choices": "Other (please specify)",
+        "response_percent": 23.14,
+        "responses": 451
+      }
+    ]
+  },
+  {
+    "question": "Which of the following green software principles do you want to incorporate into your development projects in the future?",
+    "answered": 1949,
+    "skipped": 242,
+    "data": [
+      {
+        "answer_choices": "creating software that is carbon-efficient",
+        "response_percent": 51.77,
+        "responses": 1009
+      },
+      {
+        "answer_choices": "creating software that is energy-efficient",
+        "response_percent": 62.7,
+        "responses": 1222
+      },
+      {
+        "answer_choices": "creating carbon-aware software (e.g. shifting workloads to times and locations with clean energy supply)",
+        "response_percent": 46.23,
+        "responses": 901
+      },
+      {
+        "answer_choices": "creating software that can run on older devices/hardware",
+        "response_percent": 29.4,
+        "responses": 573
+      },
+      {
+        "answer_choices": "maximizing the utilization of hardware",
+        "response_percent": 45.1,
+        "responses": 879
+      },
+      {
+        "answer_choices": "minimizing the amount of data software sends/receives",
+        "response_percent": 48.59,
+        "responses": 947
+      },
+      {
+        "answer_choices": "optimizing code by measuring its energy consumption / carbon footprint",
+        "response_percent": 56.54,
+        "responses": 1102
+      },
+      {
+        "answer_choices": "Other (please specify)",
+        "response_percent": 7.13,
+        "responses": 139
+      }
+    ]
+  },
+  {
+    "question": "Does your employer have climate targets and sustainability goals?",
+    "answered": 1718,
+    "skipped": 473,
+    "data": [
+      {
+        "answer_choices": "Comprehensive public goals and concrete climate commitments",
+        "response_percent": 47.38,
+        "responses": 814
+      },
+      {
+        "answer_choices": "Some public goals, but no concrete commitments",
+        "response_percent": 22.88,
+        "responses": 393
+      },
+      {
+        "answer_choices": "Some internal sustainability initiatives, but no public goals or concrete commitments",
+        "response_percent": 16.41,
+        "responses": 282
+      },
+      {
+        "answer_choices": "No internal or external sustainability goals, initiatives, or commitments",
+        "response_percent": 13.33,
+        "responses": 229
+      }
+    ]
+  },
+  {
+    "question": "If so, do you feel that your employer is invested in green software as part of those goals?",
+    "answered": 1718,
+    "skipped": 473,
+    "data": [
+      {
+        "answer_choices": "Very invested",
+        "response_percent": 29.57,
+        "responses": 508
+      },
+      {
+        "answer_choices": "Somewhat invested",
+        "response_percent": 43.54,
+        "responses": 748
+      },
+      {
+        "answer_choices": "Not invested",
+        "response_percent": 12.75,
+        "responses": 219
+      },
+      {
+        "answer_choices": "Organization unaware of green software as an option",
+        "response_percent": 6.05,
+        "responses": 104
+      },
+      {
+        "answer_choices": "N/A as there are no internal or external sustainability goals, initiatives, or commitments",
+        "response_percent": 8.09,
+        "responses": 139
+      }
+    ]
+  },
+  {
+    "question": "Does your leadership support efforts to implement green initiatives?",
+    "answered": 1718,
+    "skipped": 473,
+    "data": [
+      {
+        "answer_choices": "Yes",
+        "response_percent": 78.46,
+        "responses": 1348
+      },
+      {
+        "answer_choices": "No",
+        "response_percent": 21.54,
+        "responses": 370
+      }
+    ]
+  },
+  {
+    "question": "Order the following in terms of how much they help you and/or your employer implement green software. You can drag and drop the options to order them with the top one being the most important (1 = the most important).",
+    "answered": 1718,
+    "skipped": 473,
+    "data": [
+      {
+        "answer_choices": "More direct incentives (personal OKRs, sustainability goals tied to executive pay, customer asks)",
+        "responses": 597,
+        "response_percent": 34.83,
+        "score": 2.7
+      },
+      {
+        "answer_choices": "More training and educational resources",
+        "responses": 627,
+        "response_percent": 36.48,
+        "score": 2.96
+      },
+      {
+        "answer_choices": "More support from management",
+        "responses": 230,
+        "response_percent": 13.36,
+        "score": 2.2
+      },
+      {
+        "answer_choices": "Tools that are optimized for my specific workflows",
+        "responses": 264,
+        "response_percent": 15.23,
+        "score": 2.13
+      }
+    ]
+  },
+  {
+    "question": "Order the following in terms of which driver would cause more investment to flow into greening your software. You can drag and drop the options to order them with the top one being the most important (1 = the most important).",
+    "answered": 1718,
+    "skipped": 473,
+    "data": [
+      {
+        "answer_choices": "Regulation",
+        "responses": 734,
+        "response_percent": 43.21,
+        "score": 3.05
+      },
+      {
+        "answer_choices": "Standards",
+        "responses": 358,
+        "response_percent": 20.85,
+        "score": 2.62
+      },
+      {
+        "answer_choices": "Certification",
+        "responses": 174,
+        "response_percent": 10.18,
+        "score": 1.95
+      },
+      {
+        "answer_choices": "Revenue",
+        "responses": 452,
+        "response_percent": 26.76,
+        "score": 2.38
+      }
+    ]
+  },
+  {
+    "question": "Have you ever taken a green software training?",
+    "answered": 1718,
+    "skipped": 473,
+    "data": [
+      {
+        "answer_choices": "Not interested in green software training",
+        "responses": 59,
+        "response_percent": 3.43,
+        "score": 0
+      },
+      {
+        "answer_choices": "Never heard of green software training",
+        "responses": 574,
+        "response_percent": 33.41,
+        "score": 0
+      },
+      {
+        "answer_choices": "Interested in green software trainings but never taken one",
+        "responses": 945,
+        "response_percent": 55.01,
+        "score": 0
+      },
+      {
+        "answer_choices": "Yes I have taken green software training (please specify which training)",
+        "responses": 140,
+        "response_percent": 8.15,
+        "score": 0
+      }
+    ]
+  },
+  {
+    "question": "Where do you go to learn more about green software?",
+    "answered": 1718,
+    "skipped": 473,
+    "data": [
+      {
+        "answer_choices": "Peers/coworkers",
+        "responses": 616,
+        "response_percent": 35.86,
+        "score": 0
+      },
+      {
+        "answer_choices": "External sources",
+        "responses": 831,
+        "response_percent": 48.37,
+        "score": 0
+      },
+      {
+        "answer_choices": "Social Media (Twitter, YouTube, Reddit, Discord, Twitch,  LinkedIn)",
+        "responses": 606,
+        "response_percent": 35.27,
+        "score": 0
+      },
+      {
+        "answer_choices": "Organizations like GSF, Green Web Foundation, etc.",
+        "responses": 668,
+        "response_percent": 38.88,
+        "score": 0
+      },
+      {
+        "answer_choices": "Specific thought leaders in sustainability in tech",
+        "responses": 372,
+        "response_percent": 21.65,
+        "score": 0
+      },
+      {
+        "answer_choices": "Other (please specify)",
+        "responses": 163,
+        "response_percent": 9.49,
+        "score": 0
+      }
+    ]
+  }
+]

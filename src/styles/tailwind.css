@@ -28,3 +28,15 @@
 .button.secondary:focus {
   box-shadow: 0 0 0 3px rgba(140, 140, 140, 0.5);
 }
+
+.button.icon {
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray-lightest);
+  color: var(--gray-darkest);
+  transition: all 0.2s ease-in-out;
+  width: 2.5rem;
+  height: 2.5rem;
+}

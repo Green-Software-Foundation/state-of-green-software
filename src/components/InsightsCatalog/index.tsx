@@ -10,7 +10,7 @@ type Props = {
 const InsightsCatalog = ({ insights }: Props) => {
   return (
     <section className={Styles.container}>
-      <h2 className={Styles.title}>Insights</h2>
+      {/* <h2 className={Styles.title}>Insights</h2> */}
       {/* <div>
         <div className={Styles.input_wrapper}>
           <svg

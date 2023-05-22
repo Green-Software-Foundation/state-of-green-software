@@ -1,4 +1,6 @@
 ---
+import { Icon } from "astro-icon";
+
 import Layout from "../layouts/Layout.astro";
 import InsightsCatalog from "../components/InsightsCatalog";
 import type { Insight } from "../components/types";
@@ -8,7 +10,7 @@ const insights = await Astro.glob<MarkdownInstance<Insight>>(
 );
 
 // sort insights by insightNo from frontmatter
-insights.sort((a, b) => {
+insights.sort((a: MarkdownInstance<Insight>, b: MarkdownInstance<Insight>) => {
   if (a.frontmatter.insightNo < b.frontmatter.insightNo) {
     return -1;
   }
@@ -21,19 +23,32 @@ insights.sort((a, b) => {
 
 <Layout>
   <header>
+    <div class="pattern left">
+      <Icon name="pattern-left" />
+    </div>
+    <div class="pattern right">
+      <Icon name="pattern-right" />
+    </div>
     <div class="logo-wrapper">
-      <img src="/images/logo.svg" alt="SoGS Logo" />
+      <Icon name="icon" width="64" />
     </div>
     <div class="content">
-      <h1>Title goes here</h1>
+      <h1>2023 State of Green Software</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis
-        metus nisl, eu dignissim augue auctor nec. Phasellus maximus efficitur
-        imperdiet. Donec nec finibus sem.
+        A new report that brings global insights and data from industry leaders
+        and researchers to the forefront to reduce software's harm to Earth and
+        increase investment in decarbonizing software at scale.
       </p>
-      <div class="by-wrapper">
-        <span>By</span>
-        <img src="/images/logo-gsf.svg" alt="GSF Logo" />
+      <div>
+        <a
+          class="by-wrapper"
+          href="https://greensoftware.foundation/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <span>By</span>
+          <Icon name="logo-gsf" width="100" />
+        </a>
       </div>
     </div>
     <div class="btns-wrapper">
@@ -52,15 +67,40 @@ insights.sort((a, b) => {
     text-align: center;
     padding: 3rem 2rem;
     background: var(--gray-darkest);
+    position: relative;
   }
+  header .pattern {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  header .pattern.left {
+    left: 0;
+    z-index: 1;
+  }
+  header .pattern.right {
+    right: 0;
+    z-index: 1;
+  }
+  header .pattern.right svg {
+    margin-left: auto;
+  }
+
+  header .pattern svg {
+    height: 100%;
+  }
+
   .logo-wrapper {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
-  .logo-wrapper img {
+  .logo-wrapper svg {
     margin: auto;
   }
   header .content {
-    max-width: 440px;
+    max-width: 540px;
     margin: auto;
   }
 
@@ -97,5 +137,11 @@ insights.sort((a, b) => {
     padding: 3rem 2rem;
     max-width: 1200px;
     margin: auto;
+  }
+
+  @media (max-width: 768px) {
+    header .pattern {
+      display: none;
+    }
   }
 </style>

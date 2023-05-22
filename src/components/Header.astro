@@ -1,0 +1,93 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<header class="max-w-5xl mx-auto">
+  <a href="/">
+    <Icon name="logo-alt" width="200" />
+  </a>
+  <ul>
+    <li><a class="button secondary" href="/">Insights</a></li>
+    <li><a class="button secondary" href="/survey">Survey</a></li>
+    <li>
+      <a
+        class="button"
+        href="https://greensoftware.foundation"
+        target="_blank"
+        rel="noopener noreferrer">GSF Website</a
+      >
+    </li>
+  </ul>
+</header>
+<nav>
+  <a href="/">Insights</a>
+  <a href="/survey">Survey</a>
+
+  <a
+    href="https://greensoftware.foundation"
+    target="_blank"
+    rel="noopener noreferrer">GSF Website</a
+  >
+</nav>
+<style>
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.5rem;
+    font-weight: 800;
+  }
+
+  a {
+    color: var(--color-text);
+    text-decoration: none !important;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+  nav {
+    display: none;
+  }
+  /* Under 768px  */
+  @media (max-width: 768px) {
+    header {
+      justify-content: center;
+    }
+    svg {
+      width: 150px;
+    }
+    ul {
+      display: none;
+    }
+    nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24),
+        0px 3px 8px -1px rgba(50, 50, 71, 0.15);
+      z-index: 999;
+      display: flex;
+      justify-content: space-around;
+    }
+    nav a {
+      padding: 1rem;
+      text-align: center;
+      font-weight: 600;
+      color: var(--color-text);
+    }
+  }
+</style>

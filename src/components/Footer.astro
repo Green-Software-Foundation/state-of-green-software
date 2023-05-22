@@ -1,0 +1,56 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<footer>
+  <div class="logo">
+    <a href="/"> <Icon name="logo-gsf-colored" /></a>
+  </div>
+  <div class="links">
+    <a href="/">Homepage</a> |
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://greensoftware.foundation/policy/terms">Privacy Policy</a
+    > | <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://greensoftware.foundation/code-of-conduct">Code of Conduct</a
+    >
+  </div>
+  <p class="copyrights">
+    Copyright © {new Date().getFullYear()} Joint Development Foundation Projects,
+    LLC, <br />
+    Green Software Foundation Series
+  </p>
+</footer>
+<style>
+  footer {
+    text-align: center;
+    padding: 2rem 4rem;
+  }
+  footer svg {
+    margin: auto;
+  }
+  footer .logo {
+    width: 120px;
+    margin: auto;
+    margin-bottom: 16px;
+  }
+  footer .links {
+    margin-bottom: 8px;
+  }
+  footer .links a {
+    color: inherit;
+    font-size: 12px;
+  }
+  footer .copyrights {
+    font-size: 12px;
+  }
+  @media (max-width: 768px) {
+    footer {
+      padding: 2rem 1rem;
+      margin-bottom: 2rem;
+    }
+  }
+</style>

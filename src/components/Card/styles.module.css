@@ -13,6 +13,14 @@
     0px 3px 8px -1px rgba(50, 50, 71, 0.05);
   border-radius: 8px;
   color: initial;
+  border: 1px solid #f3f3f3;
+  transition: all 0.2s ease-in-out;
+}
+.container:hover {
+  border: 1px solid var(--primary);
+  box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24),
+    0px 3px 8px -1px rgba(50, 50, 71, 0.15);
+  transform: translateY(-1px);
 }
 .title {
   font-weight: 700;
@@ -32,5 +40,5 @@
   background: var(--primary);
   border-radius: 0.5rem;
   color: var(--white);
-  font-size: 0.75rem;
+  font-size: 0.65rem;
 }

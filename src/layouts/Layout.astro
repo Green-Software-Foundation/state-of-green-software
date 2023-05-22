@@ -4,6 +4,7 @@ import "@fontsource/nunito-sans/600.css";
 import "@fontsource/nunito-sans/700.css";
 import "@fontsource/nunito-sans/800.css";
 import "@fontsource/nunito-sans/900.css";
+import Footer from "../components/Footer.astro";
 ---
 
 <!DOCTYPE html>
@@ -67,30 +68,7 @@ import "@fontsource/nunito-sans/900.css";
   </head>
   <body>
     <slot />
-    <footer>
-      <div class="logo">
-        <a href="/">
-          <img src="/images/logo-gsf-colored.svg" alt="GSF Logo" /></a
-        >
-      </div>
-      <div class="links">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://greensoftware.foundation/policy/terms">Privacy Policy</a
-        > | <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://greensoftware.foundation/code-of-conduct"
-          >Code of Conduct</a
-        >
-      </div>
-      <p class="copyrights">
-        Copyright © {new Date().getFullYear()} Joint Development Foundation Projects,
-        LLC, <br />
-        Green Software Foundation Series
-      </p>
-    </footer>
+    <Footer />
     <style is:global>
       :root {
         --primary: #aecc53;
@@ -182,28 +160,6 @@ import "@fontsource/nunito-sans/900.css";
         margin: auto;
       }
 
-      footer {
-        text-align: center;
-        padding: 2rem 4rem;
-      }
-      footer img {
-        margin: auto;
-      }
-      footer .logo {
-        width: 120px;
-        margin: auto;
-        margin-bottom: 16px;
-      }
-      footer .links {
-        margin-bottom: 8px;
-      }
-      footer .links a {
-        color: inherit;
-        font-size: 12px;
-      }
-      footer .copyrights {
-        font-size: 12px;
-      }
       .container {
         padding-left: 1rem;
         padding-right: 1rem;

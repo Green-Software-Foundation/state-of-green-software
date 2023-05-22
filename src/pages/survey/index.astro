@@ -1,5 +1,7 @@
 ---
 import "../../styles/tailwind.css";
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
 ---
 
 <!DOCTYPE html>
@@ -64,34 +66,10 @@ import "../../styles/tailwind.css";
     </script>
   </head>
   <body>
-    <div class="max-w-3xl mx-auto px-8">
-      <header>
-        <a href="/"> <img src="/images/logo-alt.svg" alt="SoGS Logo" /></a>
-      </header>
-      <div id="wrapper" class="prose"></div>
-      <footer>
-        <div class="logo">
-          <img src="/images/logo-gsf-colored.svg" alt="GSF Logo" />
-        </div>
-        <div class="links">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://greensoftware.foundation/policy/terms"
-            >Privacy Policy</a
-          > | <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://greensoftware.foundation/code-of-conduct"
-            >Code of Conduct</a
-          >
-        </div>
-        <p class="copyrights">
-          Copyright © {new Date().getFullYear()} Joint Development Foundation Projects,
-          LLC, <br />
-          Green Software Foundation Series
-        </p>
-      </footer>
+    <div class="max-w-5xl mx-auto px-8">
+      <Header />
+      <div id="wrapper" class="prose max-w-6xl mx-auto"></div>
+      <Footer />
     </div>
     <style>
       :root {
@@ -101,39 +79,11 @@ import "../../styles/tailwind.css";
         --secondary: #006d68;
         --secondary-lightest-2: #fbfcf6;
 
+        --gray-lightest: #ececec;
         --gray-darkest: #1e1e1e;
       }
       body {
         background-color: var(--secondary-lightest-2);
-      }
-      header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 4rem 2rem;
-      }
-
-      footer {
-        text-align: center;
-        padding: 2rem 4rem;
-      }
-      footer img {
-        margin: auto;
-      }
-      footer .logo {
-        width: 120px;
-        margin: auto;
-        margin-bottom: 16px;
-      }
-      footer .links {
-        margin-bottom: 8px;
-      }
-      footer .links a {
-        color: inherit;
-        font-size: 12px;
-      }
-      footer .copyrights {
-        font-size: 12px;
       }
     </style>
     <style is:global>
@@ -166,7 +116,7 @@ import "../../styles/tailwind.css";
         // Add H1 with the question
         const h1 = document.createElement("h1");
         h1.innerText = result.question;
-        h1.classList.add("text-xl", "font-bold");
+        h1.classList.add("text-lg", "font-bold");
         div.appendChild(h1);
 
         const canvas = document.createElement("canvas");
@@ -189,7 +139,7 @@ import "../../styles/tailwind.css";
           options: {
             indexAxis: "y",
             responsive: true,
-            aspectRatio: 3 / 2,
+            aspectRatio: 5 / 2,
             maintainAspectRatio: true,
             plugins: {
               legend: {
@@ -214,7 +164,19 @@ import "../../styles/tailwind.css";
             },
             scales: {
               y: {
-                beginAtZero: true,
+                ticks: {
+                  callback: function (value) {
+                    if (typeof value === "string") {
+                      return value;
+                    }
+                    let label = this.getLabelForValue(value);
+                    if (label.length > 30) {
+                      return label.substring(0, 30) + "...";
+                    }
+
+                    return label;
+                  },
+                },
               },
               x: {
                 ticks: {

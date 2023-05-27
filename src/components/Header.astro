@@ -1,93 +1,68 @@
 ---
 import { Icon } from "astro-icon";
+const { isHomepage } = Astro.props;
+
+const links = [
+  {
+    label: "What is green software",
+    url: "https://learn.greensoftware.foundation/introduction#what-is-green-software",
+  },
+  {
+    label: "Methodology",
+    url: "/methodology",
+  },
+  {
+    label: "Theory of Change",
+    url: "https://greensoftware.foundation/articles/theory-of-change",
+  },
+  {
+    label: "Survey Data",
+    url: "/survey",
+  },
+];
 ---
 
-<header class="max-w-5xl mx-auto">
+<nav
+  class="text-xs lg:text-sm text-center font-bold max-w-5xl mx-auto px-4 flex items-center justify-between flex-wrap  my-4 relative"
+>
   <a href="/">
-    <Icon name="logo-alt" width="200" />
+    <Icon name="logo-alt" className="w-32 lg:w-40" />
   </a>
-  <ul>
-    <li><a class="button secondary" href="/">Insights</a></li>
-    <li><a class="button secondary" href="/survey">Survey</a></li>
-    <li>
-      <a
-        class="button"
-        href="https://greensoftware.foundation"
-        target="_blank"
-        rel="noopener noreferrer">GSF Website</a
-      >
-    </li>
-  </ul>
-</header>
-<nav>
-  <a href="/">Insights</a>
-  <a href="/survey">Survey</a>
-
-  <a
-    href="https://greensoftware.foundation"
-    target="_blank"
-    rel="noopener noreferrer">GSF Website</a
+  <button
+    class="lg:hidden block focus:outline-none"
+    onclick="document.querySelector('ul').classList.toggle('hidden')"
   >
+    <Icon name="menu" className="w-6 h-6" />
+  </button>
+  <ul
+    class="hidden lg:flex gap-4 items-center absolute lg:static bg-white lg:bg-none shadow-md lg:shadow-none z-50 top-10 left-0 w-full lg:w-auto py-3 lg:py-0"
+  >
+    {
+      links.map(({ label, url }) => (
+        <li class="py-3 lg:py-0">
+          <a
+            href={url}
+            target={url.startsWith("http") ? "_blank" : "_self"}
+            rel={url.startsWith("http") ? "noopener noreferrer" : ""}
+          >
+            {label}
+          </a>
+        </li>
+      ))
+    }
+    {
+      !isHomepage && (
+        <li class="py-3 lg:py-0">
+          <a
+            class="bg-primary inline-block hover:bg-primary-light font-bold py-2 px-4 rounded 
+            transition duration-200 ease-in-out
+            "
+            href="/"
+          >
+            More Insights
+          </a>
+        </li>
+      )
+    }
+  </ul>
 </nav>
-<style>
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem 0;
-  }
-
-  ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 0.5rem;
-    font-weight: 800;
-  }
-
-  a {
-    color: var(--color-text);
-    text-decoration: none !important;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-  nav {
-    display: none;
-  }
-  /* Under 768px  */
-  @media (max-width: 768px) {
-    header {
-      justify-content: center;
-    }
-    svg {
-      width: 150px;
-    }
-    ul {
-      display: none;
-    }
-    nav {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #fff;
-      box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24),
-        0px 3px 8px -1px rgba(50, 50, 71, 0.15);
-      z-index: 999;
-      display: flex;
-      justify-content: space-around;
-    }
-    nav a {
-      padding: 1rem;
-      text-align: center;
-      font-weight: 600;
-      color: var(--color-text);
-    }
-  }
-</style>

@@ -1,10 +1,9 @@
 ---
-import "@fontsource/nunito-sans/400.css";
-import "@fontsource/nunito-sans/600.css";
-import "@fontsource/nunito-sans/700.css";
-import "@fontsource/nunito-sans/800.css";
-import "@fontsource/nunito-sans/900.css";
+import "../styles/base.css";
+
 import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+const { isHomepage } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -59,113 +58,24 @@ import Footer from "../components/Footer.astro";
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
+        // @ts-ignore: Unreachable code error
         dataLayer.push(arguments);
       }
+      // @ts-ignore: Unreachable code error
       gtag("js", new Date());
-
+      // @ts-ignore: Unreachable code error
       gtag("config", "G-4X7F9S319R");
     </script>
   </head>
-  <body>
-    <slot />
+  <body class="bg-primary-lightest2 relative">
+    <Header isHomepage={isHomepage} />
+    <main class="px-4">
+      <slot />
+    </main>
     <Footer />
     <style is:global>
-      :root {
-        --primary: #aecc53;
-        --primary-lightest-2: #f4f6f8;
-
-        --secondary: #006d68;
-        --secondary-lightest-2: #fbfcf6;
-
-        --gray-darkest: #1e1e1e;
-
-        --tag-knowledge: #aecc53;
-        --tag-knowledge-text: var(--gray-darkest);
-        --tag-tooling: #83993e;
-        --tag-tooling-text: white;
-        --tag-culture: #d7e6a9;
-        --tag-culture-text: var(--gray-darkest);
-
-        --tag-developer: #91a7bc;
-        --tag-developer-text: var(--gray-darkest);
-        --tag-leadership: #225079;
-        --tag-leadership-text: white;
-
-        --tag-awareness: #1f2937;
-        --tag-awareness-text: white;
-        --tag-adoption: #374151;
-        --tag-adoption-text: white;
-        --tag-friction: #4b5563;
-        --tag-friction-text: white;
-        --tag-enabler: #6b7280;
-        --tag-enabler-text: white;
-      }
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-
-      * {
-        margin: 0;
-      }
-
-      html,
-      body {
-        height: 100%;
-        background-color: var(--secondary-lightest-2);
-      }
       html {
-        font-family: "Nunito Sans", sans-serif;
         scroll-behavior: smooth;
-      }
-      body {
-        line-height: 1.5;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      img,
-      picture,
-      video,
-      canvas,
-      svg {
-        display: block;
-        max-width: 100%;
-      }
-
-      input,
-      button,
-      textarea,
-      select {
-        font: inherit;
-      }
-
-      p,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        overflow-wrap: break-word;
-      }
-      p {
-        line-height: 22px;
-      }
-      #root,
-      #__next {
-        isolation: isolate;
-      }
-      .separator {
-        margin: auto;
-      }
-
-      .container {
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
-      .text-primary {
-        color: var(--primary);
       }
       .button {
         padding: 0.75rem 1.5rem;
@@ -182,29 +92,6 @@ import Footer from "../components/Footer.astro";
       }
       .button:focus {
         box-shadow: 0 0 0 3px rgb(174 204 83 / 50%);
-      }
-      .title {
-        font-weight: 900;
-        font-size: 0.875rem;
-        line-height: 1rem;
-        letter-spacing: 0.22em;
-        text-transform: uppercase;
-        color: #adcb53;
-        margin-bottom: 2rem;
-      }
-      @media (min-width: 768px) {
-        .container {
-          padding-left: 2rem;
-          padding-right: 2rem;
-        }
-      }
-
-      @media (min-width: 1024px) {
-        .container {
-          max-width: 64rem;
-          margin-left: auto;
-          margin-right: auto;
-        }
       }
     </style>
   </body>

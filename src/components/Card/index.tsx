@@ -7,7 +7,7 @@ type Props = {
 const Card = ({ url, insight: { title, tags } }: Props) => {
   return (
     <a className={Styles.wrapper} href={url}>
-      <div className={Styles.container}>
+      <div className={`${Styles.container} hover:border-primary`}>
         <div className={Styles.tags}>
           {tags?.map((tag) => (
             <span
@@ -22,7 +22,7 @@ const Card = ({ url, insight: { title, tags } }: Props) => {
             </span>
           ))}
         </div>
-        <h2 className={Styles.title}>{title}</h2>
+        <h2 className={`text-secondary ${Styles.title}`}>{title}</h2>
       </div>
     </a>
   );

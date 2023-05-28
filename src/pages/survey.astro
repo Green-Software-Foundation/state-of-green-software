@@ -1,10 +1,40 @@
 ---
-import Layout from "../../layouts/Layout.astro";
+import { Icon } from "astro-icon"; 
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <div class="max-w-5xl  mx-auto">
+  <div class="max-w-5xl mx-auto">
     <div id="wrapper" class="prose max-w-6xl mx-auto"></div>
+    <header
+      class="bg-gradient-to-tr from-gray-darkest to-gray-dark max-w-5xl mx-auto rounded-2xl py-12 px-4 relative mb-4"
+    >
+      <div
+        class="absolute top-0 bottom-0 w-full h-full pointer-events-none left-0 z-10 opacity-40 lg:opacity-100"
+      >
+        <Icon name="pattern-left" class="h-full" />
+      </div>
+      <div
+        class="absolute top-0 bottom-0 w-full h-full pointer-events-none right-0 z-10 opacity-40 lg:opacity-100"
+      >
+        <Icon name="pattern-right" class="h-full ml-auto" />
+      </div>
+      <div class="max-w-lg mx-auto flex flex-col items-center justify-center">
+        <h1
+          class="text-center text-xl lg:text-3xl font-extrabold mb-2 text-white"
+        >
+          Survey Data
+        </h1>
+        <p class="text-center text-gray-300 text-sm lg:text-base">
+          If you are interested in the raw data, you can download it from here
+        </p>
+        <div class="mt-4">
+          <a href="survey-data.zip" download class="button primary"
+            >Download Survey Data</a
+          >
+        </div>
+      </div>
+    </header>
   </div>
 </Layout>
 <style is:global>
@@ -27,7 +57,7 @@ import Layout from "../../layouts/Layout.astro";
   }
 </style>
 <script>
-  import surveryResults from "../../survey-results.json";
+  import surveryResults from "../survey-results.json";
   import Chart from "chart.js/auto";
   // Get the wrapper element and add new div for each survey result and use result.data to populate the chart with chartjs
   const wrapper = document.getElementById("wrapper") as HTMLCanvasElement;
@@ -62,6 +92,7 @@ import Layout from "../../layouts/Layout.astro";
         responsive: true,
         aspectRatio: 2 / 1,
         maintainAspectRatio: true,
+        animation: false,
         plugins: {
           legend: {
             display: false,

@@ -24,7 +24,9 @@ const { title, description, image } = metaData
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <!-- Primary Meta Tags -->
-    <title>State of Green Software</title>
+    <title>{title == "State of Green Software"
+      ? title
+      : `${title} | State of Green Software`}</title>
     <meta
       name="title"
       content={title == "State of Green Software"

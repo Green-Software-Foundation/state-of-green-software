@@ -6,7 +6,7 @@ const { title, containerClass } = Astro.props;
 
 <section id="get-report" class={containerClass}>
   <!-- Begin Mailchimp Signup Form -->
-  <div class="container">
+  <div >
     <div id="mc_embed_signup" class="form-wrapper">
       <form
         action="https://foundation.us5.list-manage.com/subscribe/post?u=ddc99c7db248c3df0ef4f7d24&id=c5376a805c"
@@ -125,16 +125,17 @@ const { title, containerClass } = Astro.props;
       margin: auto;
     }
     input[type="email"] {
-      background: #141414;
+      background: #111111;
       border: none;
       padding: 16px;
       color: inherit;
       font-size: 16px;
       outline: none;
       transition: all 0.2s ease-in-out;
-      font-family: "Nunito Sans";
+      font-family: "Nunito Sans", sans-serif;
       width: 100%;
       margin-bottom: 0.5rem;
+      border-radius: 0.5rem;
     }
     input[type="email"]:focus {
       box-shadow: 0 0 0 3px rgb(145 167 188 / 50%);

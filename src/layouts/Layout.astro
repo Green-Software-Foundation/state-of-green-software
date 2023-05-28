@@ -3,7 +3,17 @@ import "../styles/base.css";
 
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-const { isHomepage } = Astro.props;
+const { isHomepage, metaData } = Astro.props;
+const baseURL = "https://sogs-report.netlify.app/";
+
+const { title, description, image } = metaData
+  ? metaData
+  : {
+      title: "State of Green Software",
+      description:
+        "A new report that brings global insights and data from industry leaders and researchers to the forefront to reduce software's harm to Earth and increase investment in decarbonizing software at scale.",
+      image: `images/og-image.png`,
+    };
 ---
 
 <!DOCTYPE html>
@@ -15,42 +25,45 @@ const { isHomepage } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <!-- Primary Meta Tags -->
     <title>State of Green Software</title>
-    <meta name="title" content="State of Green Software" />
     <meta
-      name="description"
-      content="The State of Green Software will be the first report to map the new green software ecosystem, from key stakeholders to regulatory frameworks, from impact metrics to academic literature, open source tooling to actionable design patterns."
+      name="title"
+      content={title == "State of Green Software"
+        ? title
+        : `${title} | State of Green Software`}
     />
+
+    <meta name="description" content={description} />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={baseURL} />
     <meta
-      property="og:url"
-      content="https://stateof.greensoftware.foundation/"
+      property="og:title"
+      content={title == "State of Green Software"
+        ? title
+        : `${title} | State of Green Software`}
     />
-    <meta property="og:title" content="State of Green Software" />
-    <meta
-      property="og:description"
-      content="The State of Green Software will be the first report to map the new green software ecosystem, from key stakeholders to regulatory frameworks, from impact metrics to academic literature, open source tooling to actionable design patterns."
-    />
-    <meta
-      property="og:image"
-      content="https://stateof.greensoftware.foundation/images/og-image.png"
-    />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={`${baseURL}${image}`} />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
-      content="https://stateof.greensoftware.foundation/"
+      content={baseURL}
     />
-    <meta property="twitter:title" content="State of Green Software" />
+    <meta property="twitter:title" content={
+      title == "State of Green Software"
+        ? title
+        : `${title} | State of Green Software`
+    } />
     <meta
       property="twitter:description"
-      content="The State of Green Software will be the first report to map the new green software ecosystem, from key stakeholders to regulatory frameworks, from impact metrics to academic literature, open source tooling to actionable design patterns."
+      content={description}
     />
     <meta
       property="twitter:image"
-      content="https://stateof.greensoftware.foundation/images/og-image.png"
+      content={`${baseURL}${image}`}
     />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4X7F9S319R"

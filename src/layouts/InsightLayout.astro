@@ -2,14 +2,19 @@
 import { Icon } from "astro-icon";
 const { frontmatter } = Astro.props;
 import Form from "../components/Form.astro";
-const { title, image } = frontmatter;
+const { title, image, shortDescription } = frontmatter;
 import "../styles/base.css";
-import Footer from "../components/Footer.astro";
 import Layout from "./Layout.astro";
 const { href: url } = Astro.url;
 ---
 
-<Layout>
+<Layout
+metaData={{
+    title,
+    description: shortDescription,
+    image: `images/insights/${image}`,
+  }}
+>
   <div class="absolute left-0 top-0 -z-10 pointer-events-none hidden md:block">
     <Icon name="pattern-left" height="600" />
   </div>

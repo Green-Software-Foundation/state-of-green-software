@@ -3,22 +3,7 @@ import { Icon } from "astro-icon";
 
 import Layout from "../layouts/Layout.astro";
 import InsightsCatalog from "../components/InsightsCatalog";
-import type { Insight } from "../components/types";
-import type { MarkdownInstance } from "astro";
-const insights = await Astro.glob<MarkdownInstance<Insight>>(
-  "./insights/*.{md,mdx}"
-);
 
-// sort insights by insightNo from frontmatter
-insights.sort((a: MarkdownInstance<Insight>, b: MarkdownInstance<Insight>) => {
-  if (a.frontmatter.insightNo < b.frontmatter.insightNo) {
-    return -1;
-  }
-  if (a.frontmatter.insightNo > b.frontmatter.insightNo) {
-    return 1;
-  }
-  return 0;
-});
 ---
 
 <Layout isHomepage>
@@ -62,6 +47,6 @@ insights.sort((a: MarkdownInstance<Insight>, b: MarkdownInstance<Insight>) => {
     </div>
   </header>
   <div class="max-w-5xl mx-auto">
-    <InsightsCatalog insights={insights} />
+    <InsightsCatalog client:load />
   </div>
 </Layout>

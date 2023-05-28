@@ -13,14 +13,13 @@
   position: relative;
   max-width: 36rem;
   margin: 0 auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .input_wrapper svg {
   position: absolute;
   top: 50%;
   left: 1rem;
   transform: translateY(-50%);
-  color: var(--secondary);
 }
 .input_wrapper input {
   width: 100%;

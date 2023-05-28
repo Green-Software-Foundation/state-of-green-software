@@ -1,10 +1,9 @@
 import type { Insight } from "../types";
 import Styles from "./styles.module.css";
 type Props = {
-  url: string;
   insight: Insight;
 };
-const Card = ({ url, insight: { title, tags } }: Props) => {
+const Card = ({ insight: { url, title, tags } }: Props) => {
   return (
     <a className={Styles.wrapper} href={url}>
       <div className={`${Styles.container} hover:border-primary`}>

@@ -1,5 +1,6 @@
 ---
-layout: ../layouts/MethodologyLayout.astro
+layout: ../layouts/TextOnlyLayout.astro
+title: Methodology
 ---
 
 

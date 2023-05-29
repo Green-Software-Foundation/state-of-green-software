@@ -105,4 +105,6 @@ We look forward to sharing the next edition of this publication in 2024.
 
 Interested in citing the State of Green Software? Copy and paste the citation below.
 
-[Will create once the link is shared with me]
+  
+
+Green Software Foundation. (2023, May 31). The State of Green Software [Digital report]. Retrieved from https://www.stateof.greensoftware.foundation

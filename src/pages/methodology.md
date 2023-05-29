@@ -16,7 +16,7 @@ Our journey began in Q3 2022 with the State of Green Software Survey, our effort
 
   
 
-The SOGS global survey blended qualitative and quantitative aspects. Through 25 questions, we began capturing demographic information and data to ascertain levels of awareness and adoption, points of friction, and what is helping catalyze green software from the perspective of software developers.
+The SOGS global survey blended qualitative and quantitative aspects. Through [25 questions](/survey), we began capturing demographic information and data to ascertain levels of awareness and adoption, points of friction, and what is helping catalyze green software from the perspective of software developers.
 
   
 

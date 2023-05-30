@@ -7,11 +7,16 @@ import "../styles/base.css";
 import Layout from "./Layout.astro";
 const { pathname } = Astro.url;
 
-const twitterURLEncoded = encodeURIComponent(twitter.replace("https://stateof.greensoftware.foundation", `https://stateof.greensoftware.foundation${pathname}`));
+const twitterURLEncoded = encodeURIComponent(
+  twitter.replace(
+    "https://stateof.greensoftware.foundation",
+    `https://stateof.greensoftware.foundation${pathname}`
+  )
+);
 ---
 
 <Layout
-metaData={{
+  metaData={{
     title,
     description: shortDescription,
     image: `images/insights/${image}`,
@@ -20,7 +25,9 @@ metaData={{
   <div class="absolute left-0 top-0 -z-10 pointer-events-none hidden md:block">
     <Icon name="pattern-left" height="600" />
   </div>
-  <div class="absolute -right-12 top-[500px] -z-10 pointer-events-none hidden md:block">
+  <div
+    class="absolute -right-12 top-[500px] -z-10 pointer-events-none hidden md:block"
+  >
     <Icon name="pattern-right" height="600" />
   </div>
   <div class="max-w-5xl mx-auto main-img-wrapper mb-4">
@@ -31,6 +38,7 @@ metaData={{
   >
     <span> Share</span>
     <a
+      id="twitter-share"
       class="button icon"
       href={`https://twitter.com/intent/tweet?text=${twitterURLEncoded}`}
       target="_blank"
@@ -39,6 +47,7 @@ metaData={{
       <Icon name="twitter" height="24" color="#006d68" />
     </a>
     <a
+      id="linkedin-share"
       class="button icon"
       href={`https://www.linkedin.com/sharing/share-offsite/?url=${`https://stateof.greensoftware.foundation${pathname}`}`}
       target="_blank"
@@ -54,4 +63,3 @@ metaData={{
     <Form title="Sign up to our newsletter" />
   </div>
 </Layout>
-

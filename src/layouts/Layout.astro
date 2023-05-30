@@ -24,9 +24,13 @@ const { title, description, image } = metaData
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <!-- Primary Meta Tags -->
-    <title>{title == "State of Green Software"
-      ? title
-      : `${title} | State of Green Software`}</title>
+    <title>
+      {
+        title == "State of Green Software"
+          ? title
+          : `${title} | State of Green Software`
+      }
+    </title>
     <meta
       name="title"
       content={title == "State of Green Software"
@@ -50,39 +54,45 @@ const { title, description, image } = metaData
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={baseURL} />
     <meta
-      property="twitter:url"
-      content={baseURL}
-    />
-    <meta property="twitter:title" content={
-      title == "State of Green Software"
+      property="twitter:title"
+      content={title == "State of Green Software"
         ? title
-        : `${title} | State of Green Software`
-    } />
-    <meta
-      property="twitter:description"
-      content={description}
+        : `${title} | State of Green Software`}
     />
-    <meta
-      property="twitter:image"
-      content={`${baseURL}${image}`}
-    />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4X7F9S319R"
-    ></script>
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={`${baseURL}${image}`} />
+    <!-- Google Tag Manager -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        // @ts-ignore: Unreachable code error
-        dataLayer.push(arguments);
-      }
-      // @ts-ignore: Unreachable code error
-      gtag("js", new Date());
-      // @ts-ignore: Unreachable code error
-      gtag("config", "G-4X7F9S319R");
+      (function (w, d, s, l, i) {
+        //@ts-ignore: Unreachable code error
+        w[l] = w[l] || [];
+        //@ts-ignore: Unreachable code error
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        //@ts-ignore: Unreachable code error
+        j.async = true;
+        //@ts-ignore: Unreachable code error
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        //@ts-ignore: Unreachable code error
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5ZDW8XX");
     </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body class="bg-primary-lightest2 relative">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5ZDW8XX"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
     <Header isHomepage={isHomepage} />
     <main class="px-4">
       <slot />
@@ -111,4 +121,3 @@ const { title, description, image } = metaData
     </style>
   </body>
 </html>
- 

@@ -73,7 +73,7 @@ const InsightsCatalog = () => {
             classNames={{
               list: 'flex flex-wrap gap-2',
               checkbox: 'hidden',
-              label: 'border p-2 px-1.5 py-0.5 rounded text-xs font-bold flex items-center justify-center',
+              label: 'border p-2 px-1.5 py-0.5 rounded text-xs font-bold flex items-center justify-center cursor-pointer',
               count: 'hidden',
               selectedItem: 'bg-gray-200 rounded'
             }}

@@ -52,6 +52,8 @@ SOGS required the knowledge, expertise and support of many individuals across se
 
 [Elise Zelechowski](https://www.linkedin.com/in/elise-zelechowski/), Policy Working Group Chair
 
+[Tamara Kneese](https://www.linkedin.com/in/tamara-kneese/), Lead Researcher and Author
+
   
 
 ## Development Team
@@ -71,8 +73,6 @@ Catherine Maughan, Technical Copyeditor
 [Oleg Zhymolokhov](https://www.linkedin.com/in/oleg-zhymolokhov-2b742677), Project Manager
 
 [Osama Jandali](https://www.linkedin.com/in/osamajandali/), Lead Web Developer
-
-[Tamara Kneese](https://www.linkedin.com/in/tamara-kneese/), Lead Researcher and Author
 
   
 

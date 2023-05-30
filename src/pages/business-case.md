@@ -7,7 +7,7 @@ title: Business Case for Green Software
 
   
 
-Aside from the clear environmental and social benefits that green software affords [link to What is Green Software article], there are a range of business incentives. Businesses have much to gain from implementing sustainability measures, from brand resilience to employee recruitment and retention. [Further Reading (Link to Insight 22)]. There are also incentives directly tied to green software itself, including ESG compliance, cost reduction, and streamlined development.
+Aside from the clear environmental and social benefits that green software affords [What is Green Software](https://learn.greensoftware.foundation/introduction/#what-is-green-software), there are a range of business incentives. Businesses have much to gain from implementing sustainability measures, from brand resilience to employee recruitment and retention. [Further Reading](/insights/green-software-business-case/). There are also incentives directly tied to green software itself, including ESG compliance, cost reduction, and streamlined development.
 
   
 
@@ -19,7 +19,7 @@ By financing, resourcing and applying green software principles, businesses can:
 
   
 
-Corporate social responsibility is important to consumers who overwhelmingly state that they want to support environmentally-conscious companies. However, according to a [study by the Wharton School of Business](https://www.forbes.com/sites/gregpetro/2022/03/11/consumers-demand-sustainable-products-and-shopping-formats/?sh=69ade5046a06), there is a major disconnect between consumers’ interest in sustainability and retail executives’ views. The same Wharton study states, “consumers across all generations—from Baby Boomers to Gen Z—are now willing to spend more for sustainable products.” If executives want to stay up on current consumer trends and maintain business viability, then sustainability will be a necessary part of that calculus. Popular consumer products such as the Xbox have begun to include carbon-aware features, making such features more of a consumer expectation. [Further Reading (Link to Insight 23)].
+Corporate social responsibility is important to consumers who overwhelmingly state that they want to support environmentally-conscious companies. However, according to a [study by the Wharton School of Business](https://www.forbes.com/sites/gregpetro/2022/03/11/consumers-demand-sustainable-products-and-shopping-formats/?sh=69ade5046a06), there is a major disconnect between consumers’ interest in sustainability and retail executives’ views. The same Wharton study states, “consumers across all generations—from Baby Boomers to Gen Z—are now willing to spend more for sustainable products.” If executives want to stay up on current consumer trends and maintain business viability, then sustainability will be a necessary part of that calculus. Popular consumer products such as the Xbox have begun to include carbon-aware features, making such features more of a consumer expectation. [Further Reading](/insights/green-software-gaming-industry/).
 
   
 
@@ -27,11 +27,11 @@ Consumers are also willing to pay more for greener technology, including green s
 
   
 
-[Link to Insight 10]More broadly, results from a 2021 [IBM survey](https://ibm.co/2022-consumer-study) showed that 50% of consumers were willing to pay more for a sustainable brand or sustainable products. A more recent poll surveying 16,000 consumers [in 2022](https://www.ibm.com/thought-leadership/institute-business-value/en-us/report/2022-sustainability-consumer-research) found that 49% paid an average premium of 59% more for products branded as sustainable or socially responsible in the last 12 months.
+[63% of CEOs do not rate sustainability as a top priority](/insights/63-percent-of-ceo-do-not-rate-sustainability-as-a-top-priority/). More broadly, results from a 2021 [IBM survey](https://ibm.co/2022-consumer-study) showed that 50% of consumers were willing to pay more for a sustainable brand or sustainable products. A more recent poll surveying 16,000 consumers [in 2022](https://www.ibm.com/thought-leadership/institute-business-value/en-us/report/2022-sustainability-consumer-research) found that 49% paid an average premium of 59% more for products branded as sustainable or socially responsible in the last 12 months.
 
   
 
-Green software will also be a factor in organizations reaching their net zero goals, as corporations and other organizations will require tools to reduce, measure, and report their scope 1, 2, and 3 emissions. [Link to Insight 3].
+Green software will also be a factor in organizations reaching their net zero goals, as corporations and other organizations will require tools to reduce, measure, and report their scope 1, 2, and 3 emissions. [Green software is vital for a net zero future](/insights/green-software-vital-for-net-zero/).
 
   
 
@@ -39,11 +39,11 @@ Green software will also be a factor in organizations reaching their net zero go
 
   
 
-According to the SOGS survey, 92% of software practitioners are concerned about climate change [Link to Insight 7]. Because sustainability is important to employees, especially millennials and younger generations, it will be a crucial aspect of employee recruitment and retention for companies.
+According to the SOGS survey, [92% of software practitioners are concerned about climate change](/insights/92-percent-of-software-practitioners-are-concerned-about-climate-change/). Because sustainability is important to employees, especially millennials and younger generations, it will be a crucial aspect of employee recruitment and retention for companies.
 
   
 
-According to a [2019 study](https://www.fastcompany.com/90306556/most-millennials-would-take-a-pay-cut-to-work-at-a-sustainable-company) conducted by Fast Company, 40% of millennials said they have chosen to work for an employer before because of their strong sustainability performance. 30% of respondents also said they had chosen to leave a job because of poor sustainability performance. [Link to Insight 11].
+According to a [2019 study](https://www.fastcompany.com/90306556/most-millennials-would-take-a-pay-cut-to-work-at-a-sustainable-company) conducted by Fast Company, 40% of millennials said they have chosen to work for an employer before because of their strong sustainability performance. 30% of respondents also said they had chosen to leave a job because of poor sustainability performance. [Sustainability is key for employee recruitment and retention](/insights/sustainability-is-key-for-employee-recruitment-and-retention/).
 
   
 
@@ -55,11 +55,11 @@ There is a dire need for more climate-related knowledge and talent in the tech i
 
   
 
-Regulatory changes position sustainability as an important consideration. The [prevalence of software-focused legislation](https://datahub.itu.int/data/?e=&c=701&i=100090&s=12604) has experienced a 4X increase in the last decade, with 40% of countries having introduced some form of regulation by 2021. [Link to Insight 15]. There are also formalized standards for green software emerging. [Link to Insight 16] Companies must measure and report their emissions, and ESG compliance demands accuracy in calculation. [Investors](https://www.nytimes.com/2022/12/07/business/dealbook/blackrock-esg-activist-bluebell.html) increasingly care about this, and ESG compliance is a factor in [Blackrock’s assessment](https://www.blackrock.com/ch/individual/en/themes/sustainable-investing) of companies to invest in. With investors considering green software as a positive marker for investment, companies applying green software principles and measuring emissions across their applications could be better positioned for increased funding.
+Regulatory changes position sustainability as an important consideration. The [prevalence of software-focused legislation](https://datahub.itu.int/data/?e=&c=701&i=100090&s=12604) has experienced a 4X increase in the last decade, with 40% of countries having introduced some form of regulation by 2021. [Software legislation has quadrupled in the last decade](/insights/software-legislation-has-quadrupled-in-the-last-decade/). There are also formalized standards for green software emerging. [Green software standards are proliferating rapidly](/insights/green-software-standards-are-proliferating-rapidly/). Companies must measure and report their emissions, and ESG compliance demands accuracy in calculation. [Investors](https://www.nytimes.com/2022/12/07/business/dealbook/blackrock-esg-activist-bluebell.html) increasingly care about this, and ESG compliance is a factor in [Blackrock’s assessment](https://www.blackrock.com/ch/individual/en/themes/sustainable-investing) of companies to invest in. With investors considering green software as a positive marker for investment, companies applying green software principles and measuring emissions across their applications could be better positioned for increased funding.
 
   
 
-While businesses might be wary of the ROI of investing in sustainability measures, a [2022 Morningstar repor](https://www.morningstar.com/articles/1075190/why-sustainable-strategies-outperformed-in-2021)t found that companies with the best ESG scores had returns of 33%, or 8% higher than the broader U.S. market. There is a clear ROI on sustainability measures. [A Gartner study](https://www.gartner.com/smarterwithgartner/the-esg-imperative-7-factors-for-finance-leaders-to-consider) found that 85% of investors considered ESG factors in their investments in 2020. [Link to Insight 10].
+While businesses might be wary of the ROI of investing in sustainability measures, a [2022 Morningstar report](https://www.morningstar.com/articles/1075190/why-sustainable-strategies-outperformed-in-2021) found that companies with the best ESG scores had returns of 33%, or 8% higher than the broader U.S. market. There is a clear ROI on sustainability measures. [A Gartner study](https://www.gartner.com/smarterwithgartner/the-esg-imperative-7-factors-for-finance-leaders-to-consider) found that 85% of investors considered ESG factors in their investments in 2020. [63% of CEOs do not rate sustainability as a top priority](/insights/63-percent-of-ceo-do-not-rate-sustainability-as-a-top-priority/).
 
   
 
@@ -67,7 +67,7 @@ Green software is also a market differentiator. [AWS](https://www.computerweekly
 
   
 
-[Accenture’s 2022 report](https://www.accenture.com/us-en/insights/technology/uniting-technology-sustainability) on Uniting Tech and Sustainability finds that businesses that have integrated their IT Strategy with their sustainability and business strategy far outperform their competitors in total shareholder value. [Link to Insight 22]
+[Accenture’s 2022 report](https://www.accenture.com/us-en/insights/technology/uniting-technology-sustainability) on Uniting Tech and Sustainability finds that businesses that have integrated their IT Strategy with their sustainability and business strategy far outperform their competitors in total shareholder value. [There is a business case for making software greener](/insights/green-software-business-case/).
 
   
 
@@ -87,7 +87,7 @@ Another example of the cost reduction afforded by sustainability measures is “
 
   
 
-[Accenture](https://www.accenture.com/content/dam/accenture/final/a-com-migration/pdf/pdf-177/accenture-tech-sustainability-uniting-sustainability-and-technology.pdf#zoom=40) found that thoughtful, green UX design can streamline the user experience while driving down business costs. [Insight 19]. As shown by these examples, there is a strong correlation between GreenOps and FinOps. Green software practices lead to the optimized and more efficient use of computing resources, which in turn lowers the cost of ownership of IT.
+[Accenture](https://www.accenture.com/content/dam/accenture/final/a-com-migration/pdf/pdf-177/accenture-tech-sustainability-uniting-sustainability-and-technology.pdf#zoom=40) found that thoughtful, green UX design can streamline the user experience while driving down business costs. [Green software principles must be a part of the user experience](/insights/green-software-principles-user-experience/). As shown by these examples, there is a strong correlation between GreenOps and FinOps. Green software practices lead to the optimized and more efficient use of computing resources, which in turn lowers the cost of ownership of IT.
 
   
 
@@ -95,7 +95,7 @@ Another example of the cost reduction afforded by sustainability measures is “
 
   
 
-[Link to Insight 3] Green software has proven to make code and operations more efficient as it [involves](https://www.tcs.com/what-we-do/research/white-paper/greening-software-net-zero-emissions-sustainability) improving efficiencies across the development, deployment, usage, and maintenance stages. Greener, more efficient software creates a better customer experience as various components work [better and faster](https://www.infoq.com/news/2023/03/green-software-development/). Cutting down on zombies, or unused technologies, code that is no longer needed, or data that is redundant streamlines development and reduces operating costs, along with emissions. [Holly Cummings](https://hollycummins.com/cloud-zombies-qcon-london/) outlines some strategies for eliminating the wasteful environmental impact of cloud zombies. Minimizing stranded power in the datacenter cuts costs and makes operations more efficient.
+[Green software is vital for a net zero future](/insights/green-software-vital-for-net-zero/). Green software has proven to make code and operations more efficient as it [involves](https://www.tcs.com/what-we-do/research/white-paper/greening-software-net-zero-emissions-sustainability) improving efficiencies across the development, deployment, usage, and maintenance stages. Greener, more efficient software creates a better customer experience as various components work [better and faster](https://www.infoq.com/news/2023/03/green-software-development/). Cutting down on zombies, or unused technologies, code that is no longer needed, or data that is redundant streamlines development and reduces operating costs, along with emissions. [Holly Cummings](https://hollycummins.com/cloud-zombies-qcon-london/) outlines some strategies for eliminating the wasteful environmental impact of cloud zombies. Minimizing stranded power in the datacenter cuts costs and makes operations more efficient.
 
   
 
@@ -103,4 +103,4 @@ According to [IBM](https://www.ibm.com/cloud/blog/green-codin), “Using green c
 
   
 
-Green software is a growing field that demands CEO attention. According to the SOGS survey, 26% of respondents say that sustainability or green software, specifically, is part of their official role. [Link to Insight 9]. While there is a clear business case for green software, such initiatives can only succeed with ample C-suite support. 63% of CEOs do not yet rate sustainability as a high priority, despite its urgency for business and the climate. [Link to Insight 10]. If CEOs step up and take action now, they will be ahead of the curve in appealing to investors and consumers alike, reducing costs, retaining employees, and fostering climate-focused innovation.
+Green software is a growing field that demands CEO attention. According to the SOGS survey, 26% of respondents say that sustainability or green software, specifically, is part of their official role. [Developers strive for eco-friendly software but lack resources](/insights/developers-for-eco-friendly-software-lack-resources/). While there is a clear business case for green software, such initiatives can only succeed with ample C-suite support. 63% of CEOs do not yet rate sustainability as a high priority, despite its urgency for business and the climate. [63% of CEOs do not rate sustainability as a top priority](/insights/63-percent-of-ceo-do-not-rate-sustainability-as-a-top-priority/). If CEOs step up and take action now, they will be ahead of the curve in appealing to investors and consumers alike, reducing costs, retaining employees, and fostering climate-focused innovation.

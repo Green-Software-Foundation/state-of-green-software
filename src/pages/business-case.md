@@ -39,7 +39,7 @@ Green software will also be a factor in organizations reaching their [net zero g
 
   
 
-According to the SOGS survey, [92% of software practitioners are concerned about climate change](/insights/92-percent-of-software-practitioners-are-concerned-about-climate-change/). Because sustainability is important to employees, especially millennials and younger generations, it will be a crucial aspect of employee recruitment and retention for companies.
+According to the [SOGS survey](/survey), [92% of software practitioners are concerned about climate change](/insights/92-percent-of-software-practitioners-are-concerned-about-climate-change/). Because sustainability is important to employees, especially millennials and younger generations, it will be a crucial aspect of employee recruitment and retention for companies.
 
   
 
@@ -103,4 +103,4 @@ According to [IBM](https://www.ibm.com/cloud/blog/green-codin), “Using green c
 
   
 
-Green software is a growing field [that demands CEO attention](/insights/developers-for-eco-friendly-software-lack-resources/). According to the SOGS survey, 26% of respondents say that sustainability or green software, specifically, is part of their official role. While there is a clear business case for green software, such initiatives can only succeed with ample C-suite support. 63% of CEOs do not yet rate sustainability as a high priority, despite its urgency for business and the climate. If [CEOs step up and take action now](/insights/63-percent-of-ceo-do-not-rate-sustainability-as-a-top-priority/), they will be ahead of the curve in appealing to investors and consumers alike, reducing costs, retaining employees, and fostering climate-focused innovation.
+Green software is a growing field [that demands CEO attention](/insights/developers-for-eco-friendly-software-lack-resources/). According to the [SOGS survey](/survey), 26% of respondents say that sustainability or green software, specifically, is part of their official role. While there is a clear business case for green software, such initiatives can only succeed with ample C-suite support. 63% of CEOs do not yet rate sustainability as a high priority, despite its urgency for business and the climate. If [CEOs step up and take action now](/insights/63-percent-of-ceo-do-not-rate-sustainability-as-a-top-priority/), they will be ahead of the curve in appealing to investors and consumers alike, reducing costs, retaining employees, and fostering climate-focused innovation.

@@ -26,11 +26,11 @@ In total, we gathered an impressive 2,191 responses from software practitioners 
 
 ## Secondary Research
 
-In addition to the SOGS survey, we delved into secondary desk research to uncover insights shared in reports from major consultancy firms, including McKinsey and Gartner, and cutting-edge peer-reviewed academic research in leading journals like Nature. We also sought perspectives from thought leaders in green software. These conversations provided us with unique perspectives and a lens into how theory translates across companies, domains, and applications.
+In addition to the [SOGS survey](/survey), we delved into secondary desk research to uncover insights shared in reports from major consultancy firms, including McKinsey and Gartner, and cutting-edge peer-reviewed academic research in leading journals like Nature. We also sought perspectives from thought leaders in green software. These conversations provided us with unique perspectives and a lens into how theory translates across companies, domains, and applications.
 
   
 
-By blending the rich data gathered from the SOGS survey with comprehensive background research, the SOGS digital publication presents a holistic and accurate representation of the state of green software, globally.
+By blending the rich data gathered from the [SOGS survey](/survey) with comprehensive background research, the SOGS digital publication presents a holistic and accurate representation of the state of green software, globally.
 
   
 
@@ -90,11 +90,11 @@ Catherine Maughan, Technical Copyeditor
 
   
 
-Our incredible community of members and partners played a pivotal role in spreading the word about our survey far and wide. Their support helped build the rich and diverse dataset that forms the foundation of our work. We collected responses from Accenture, Amadeus, Avanade, Boston Consulting Group, Container Solutions, The Explorers, Globant, Intel, Mastercard, Microsoft, NTT Data Corporation, Syngenio AG, Texas State University, Thoughtworks, and University of Bristol. Avanade, in particular, raised the profile of the SOGS survey among their employees. Thank you for your collective efforts and providing us a treasure trove of insights to analyze and derive meaningful conclusions.
+Our incredible community of members and partners played a pivotal role in spreading the word about our survey far and wide. Their support helped build the rich and diverse dataset that forms the foundation of our work. We collected responses from Accenture, Amadeus, Avanade, Boston Consulting Group, Container Solutions, The Explorers, Globant, Intel, Mastercard, Microsoft, NTT Data Corporation, Syngenio AG, Texas State University, Thoughtworks, and University of Bristol. Avanade, in particular, raised the profile of the [SOGS survey](/survey) among their employees. Thank you for your collective efforts and providing us a treasure trove of insights to analyze and derive meaningful conclusions.
 
   
 
-We would also like to take a moment to thank our public network engaged through Twitter, LinkedIn, email, and our website, who shared their experience by completing the SOGS survey.
+We would also like to take a moment to thank our public network engaged through Twitter, LinkedIn, email, and our website, who shared their experience by completing the [SOGS survey](/survey).
 
   
 

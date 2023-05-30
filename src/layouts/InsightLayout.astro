@@ -2,10 +2,12 @@
 import { Icon } from "astro-icon";
 const { frontmatter } = Astro.props;
 import Form from "../components/Form.astro";
-const { title, image, shortDescription } = frontmatter;
+const { title, image, shortDescription, twitter } = frontmatter;
 import "../styles/base.css";
 import Layout from "./Layout.astro";
-const { href: url } = Astro.url;
+const { pathname } = Astro.url;
+
+const twitterURLEncoded = encodeURIComponent(twitter.replace("https://stateof.greensoftware.foundation", `https://stateof.greensoftware.foundation${pathname}`));
 ---
 
 <Layout
@@ -30,7 +32,7 @@ metaData={{
     <span> Share</span>
     <a
       class="button icon"
-      href={`https://twitter.com/intent/tweet?text=Check%20out%20this%20insight%20on%20the%20State%20of%20green%20Software%20%7C%20${url}%2F`}
+      href={`https://twitter.com/intent/tweet?text=${twitterURLEncoded}`}
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -38,7 +40,7 @@ metaData={{
     </a>
     <a
       class="button icon"
-      href={`https://www.linkedin.com/sharing/share-offsite/?url=${url}`}
+      href={`https://www.linkedin.com/sharing/share-offsite/?url=${`https://stateof.greensoftware.foundation${pathname}`}`}
       target="_blank"
       rel="noopener noreferrer"
     >

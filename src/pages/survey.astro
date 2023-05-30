@@ -69,8 +69,8 @@ const h1 = document.createElement("h1");
 h1.classList.add("text-lg", "font-bold", "flex", "items-center");
 // Add anchor link to the question
 const anchor = document.createElement("a");
-anchor.href = "#q" + index;
-anchor.id = "q" + index;
+anchor.href = "#q" + (index + 1);
+anchor.id = "q" + (index + 1);
 // Add svg icon to the anchor
 const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 svg.setAttribute("viewBox", "0 0 24 24");

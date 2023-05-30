@@ -48,11 +48,11 @@ SOGS required the knowledge, expertise and support of many individuals across se
 
 [Asim Hussain](https://www.linkedin.com/in/jawache/), Executive Director & Chairperson
 
-[Tamara Kneese](https://www.linkedin.com/in/tamara-kneese/), Lead Researcher and Author
-
 [Chris Adams](https://www.linkedin.com/in/mrchrisadams/), Policy Working Group Chair
 
 [Elise Zelechowski](https://www.linkedin.com/in/elise-zelechowski/), Policy Working Group Chair
+
+[Tamara Kneese](https://www.linkedin.com/in/tamara-kneese/), Lead Researcher and Author
 
   
 

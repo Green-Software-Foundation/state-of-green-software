@@ -1,9 +1,19 @@
 ---
-import "@fontsource/nunito-sans/400.css";
-import "@fontsource/nunito-sans/600.css";
-import "@fontsource/nunito-sans/700.css";
-import "@fontsource/nunito-sans/800.css";
-import "@fontsource/nunito-sans/900.css";
+import "../styles/base.css";
+
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+const { isHomepage, metaData } = Astro.props;
+const baseURL = "https://sogs-report.netlify.app/";
+
+const { title, description, image } = metaData
+  ? metaData
+  : {
+      title: "State of Green Software",
+      description:
+        "A new report that brings global insights and data from industry leaders and researchers to the forefront to reduce software's harm to Earth and increase investment in decarbonizing software at scale.",
+      image: `images/og-image.png`,
+    };
 ---
 
 <!DOCTYPE html>
@@ -14,204 +24,89 @@ import "@fontsource/nunito-sans/900.css";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <!-- Primary Meta Tags -->
-    <title>State of Green Software</title>
-    <meta name="title" content="State of Green Software" />
+    <title>
+      {
+        title == "State of Green Software"
+          ? title
+          : `${title} | State of Green Software`
+      }
+    </title>
     <meta
-      name="description"
-      content="The State of Green Software will be the first report to map the new green software ecosystem, from key stakeholders to regulatory frameworks, from impact metrics to academic literature, open source tooling to actionable design patterns."
+      name="title"
+      content={title == "State of Green Software"
+        ? title
+        : `${title} | State of Green Software`}
     />
+
+    <meta name="description" content={description} />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={baseURL} />
     <meta
-      property="og:url"
-      content="https://stateof.greensoftware.foundation/"
+      property="og:title"
+      content={title == "State of Green Software"
+        ? title
+        : `${title} | State of Green Software`}
     />
-    <meta property="og:title" content="State of Green Software" />
-    <meta
-      property="og:description"
-      content="The State of Green Software will be the first report to map the new green software ecosystem, from key stakeholders to regulatory frameworks, from impact metrics to academic literature, open source tooling to actionable design patterns."
-    />
-    <meta
-      property="og:image"
-      content="https://stateof.greensoftware.foundation/images/og-image.png"
-    />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={`${baseURL}${image}`} />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={baseURL} />
     <meta
-      property="twitter:url"
-      content="https://stateof.greensoftware.foundation/"
+      property="twitter:title"
+      content={title == "State of Green Software"
+        ? title
+        : `${title} | State of Green Software`}
     />
-    <meta property="twitter:title" content="State of Green Software" />
-    <meta
-      property="twitter:description"
-      content="The State of Green Software will be the first report to map the new green software ecosystem, from key stakeholders to regulatory frameworks, from impact metrics to academic literature, open source tooling to actionable design patterns."
-    />
-    <meta
-      property="twitter:image"
-      content="https://stateof.greensoftware.foundation/images/og-image.png"
-    />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4X7F9S319R"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={`${baseURL}${image}`} />
 
-      gtag("config", "G-4X7F9S319R");
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        //@ts-ignore: Unreachable code error
+        w[l] = w[l] || [];
+        //@ts-ignore: Unreachable code error
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        //@ts-ignore: Unreachable code error
+        j.async = true;
+        //@ts-ignore: Unreachable code error
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        //@ts-ignore: Unreachable code error
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5ZDW8XX");
     </script>
+    <!-- End Google Tag Manager -->
   </head>
-  <body>
-    <header>
-      <div><img src="/images/logo.svg" alt="SoGS Logo" /></div>
-      <h1>State of <span> green software</span></h1>
-    </header>
-    <main>
+  <body class="bg-primary-lightest2 relative">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5ZDW8XX"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
+    <Header isHomepage={isHomepage} />
+    <main class="px-4">
       <slot />
     </main>
-    <!-- <footer>
-      <div class="logo">
-        <img src="/images/logo-gsf.svg" alt="GSF Logo" />
-      </div>
-      <div class="links">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://greensoftware.foundation/policy/terms">Privacy Policy</a
-        > | <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://greensoftware.foundation/code-of-conduct"
-          >Code of Conduct</a
-        >
-      </div>
-      <p class="copyrights">
-        Copyright © 2022 Joint Development Foundation Projects, LLC, <br />
-        Green Software Foundation Series
-      </p>
-    </footer> -->
+    <Footer />
     <style is:global>
-      :root {
-        --primary: #aecc53;
-      }
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-
-      * {
-        margin: 0;
-      }
-
       html {
-        font-family: "Nunito Sans", sans-serif;
-        background-color: #1e1e1e;
-        color: #fff;
         scroll-behavior: smooth;
-      }
-      body {
-        line-height: 1.5;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      img,
-      picture,
-      video,
-      canvas,
-      svg {
-        display: block;
-        max-width: 100%;
-      }
-
-      input,
-      button,
-      textarea,
-      select {
-        font: inherit;
-      }
-
-      p,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        overflow-wrap: break-word;
-      }
-      p {
-        line-height: 22px;
-        letter-spacing: 0.07em;
-      }
-      #root,
-      #__next {
-        isolation: isolate;
-      }
-      .separator {
-        margin: auto;
-      }
-      header {
-        margin-top: 2.75rem;
-        margin-bottom: 2.75rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-      header img {
-        width: 4rem;
-      }
-      header h1 {
-        font-weight: 900;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        text-align: center;
-        margin-top: 1rem;
-        line-height: 91%;
-        letter-spacing: 0.175em;
-      }
-      header h1 span {
-        display: block;
-        color: var(--primary);
-      }
-      footer {
-        text-align: center;
-        padding: 2rem 4rem;
-      }
-      footer img {
-        margin: auto;
-      }
-      footer .logo {
-        width: 120px;
-        margin: auto;
-        margin-bottom: 16px;
-      }
-      footer .links {
-        margin-bottom: 8px;
-      }
-      footer .links a {
-        color: inherit;
-        font-size: 12px;
-      }
-      footer .copyrights {
-        font-size: 12px;
-      }
-      .container {
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
-      .text-primary {
-        color: var(--primary);
       }
       .button {
         padding: 0.75rem 1.5rem;
         background: var(--primary);
-        color: #111827;
+        color: var(--gray-darkest);
         border: none;
         display: inline-block;
         font-weight: 800;
@@ -219,43 +114,10 @@ import "@fontsource/nunito-sans/900.css";
         cursor: pointer;
         transition: all 0.2s ease-in-out;
         text-decoration: none;
+        border-radius: 0.5rem;
       }
       .button:focus {
         box-shadow: 0 0 0 3px rgb(174 204 83 / 50%);
-      }
-      .title {
-        font-weight: 900;
-        font-size: 0.875rem;
-        line-height: 1rem;
-        letter-spacing: 0.22em;
-        text-transform: uppercase;
-        color: #adcb53;
-        margin-bottom: 2rem;
-      }
-      @media (min-width: 768px) {
-        .container {
-          padding-left: 2rem;
-          padding-right: 2rem;
-        }
-        header {
-          margin-top: 6rem;
-          margin-bottom: 6rem;
-        }
-        header img {
-          width: 6rem;
-        }
-        header h1 {
-          font-size: 2.75rem;
-          margin-top: 2rem;
-        }
-      }
-
-      @media (min-width: 1024px) {
-        .container {
-          max-width: 64rem;
-          margin-left: auto;
-          margin-right: auto;
-        }
       }
     </style>
   </body>

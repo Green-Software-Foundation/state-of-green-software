@@ -1,0 +1,73 @@
+---
+import { Icon } from "astro-icon";
+const { isHomepage } = Astro.props;
+const links = [
+  {
+    label: "What is green software",
+    url: "https://learn.greensoftware.foundation/introduction#what-is-green-software",
+  },
+  {
+    label: "Business Case",
+    url: "/business-case",
+  },
+  {
+    label: "Methodology",
+    url: "/methodology",
+  },
+  {
+    label: "Theory of Change",
+    url: "https://greensoftware.foundation/articles/theory-of-change",
+  },
+  {
+    label: "Survey Data",
+    url: "/survey",
+  },
+];
+
+---
+
+<nav
+  class="text-xs lg:text-sm text-center font-bold max-w-5xl mx-auto px-4 flex items-center justify-between flex-wrap  my-4 relative"
+>
+  <a href="/" aria-label="SoGS Logo">
+    <Icon name="logo-alt" className="w-32 lg:w-40" />
+  </a>
+  <button
+    class="lg:hidden block focus:outline-none"
+    onclick="document.querySelector('ul').classList.toggle('hidden')"
+  >
+    <Icon name="menu" className="w-6 h-6" />
+  </button>
+  <ul
+    class="hidden lg:flex gap-4 items-center absolute lg:static  lg:bg-none shadow-md lg:shadow-none z-50 top-10 left-0 w-full lg:w-auto py-3 lg:py-0"
+  >
+    {
+      links.map(({ label, url }) => (
+        <li class="py-3 lg:py-0">
+          <a
+            href={url}
+            target={url.startsWith("http") ? "_blank" : "_self"}
+            rel={url.startsWith("http") ? "noopener noreferrer" : ""}
+            class={`${Astro.url.pathname === url ? "text-secondary" : ""}`}
+          >
+            {label}
+          </a>
+        </li>
+      ))
+    }
+    {
+      !isHomepage && (
+        <li class="py-3 lg:py-0">
+          <a
+            class="bg-primary inline-block hover:bg-primary-light font-bold py-2 px-4 rounded 
+            transition duration-200 ease-in-out
+            "
+            href="/"
+          >
+            More Insights
+          </a>
+        </li>
+      )
+    }
+  </ul>
+</nav>

@@ -1,0 +1,65 @@
+---
+import { Icon } from "astro-icon";
+const { frontmatter } = Astro.props;
+import Form from "../components/Form.astro";
+const { title, image, shortDescription, twitter } = frontmatter;
+import "../styles/base.css";
+import Layout from "./Layout.astro";
+const { pathname } = Astro.url;
+
+const twitterURLEncoded = encodeURIComponent(
+  twitter.replace(
+    "https://stateof.greensoftware.foundation",
+    `https://stateof.greensoftware.foundation${pathname}`
+  )
+);
+---
+
+<Layout
+  metaData={{
+    title,
+    description: shortDescription,
+    image: `images/insights/${image}`,
+  }}
+>
+  <div class="absolute left-0 top-0 -z-10 pointer-events-none hidden md:block">
+    <Icon name="pattern-left" height="600" />
+  </div>
+  <div
+    class="absolute -right-12 top-[500px] -z-10 pointer-events-none hidden md:block"
+  >
+    <Icon name="pattern-right" height="600" />
+  </div>
+  <div class="max-w-5xl mx-auto main-img-wrapper mb-4">
+    <img src={`/images/insights/${image}`} alt={title} class="rounded-2xl" />
+  </div>
+  <div
+    class="social max-w-5xl mx-auto flex items-center justify-end gap-4 mb-4"
+  >
+    <span> Share</span>
+    <a
+      id="twitter-share"
+      class="button icon"
+      href={`https://twitter.com/intent/tweet?text=${twitterURLEncoded}`}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Icon name="twitter" height="24" color="#006d68" />
+    </a>
+    <a
+      id="linkedin-share"
+      class="button icon"
+      href={`https://www.linkedin.com/sharing/share-offsite/?url=${`https://stateof.greensoftware.foundation${pathname}`}`}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Icon name="linkedin" height="24" color="#006d68" />
+    </a>
+  </div>
+  <div class="max-w-4xl mx-auto">
+    <article class="prose max-w-none prose-xl">
+      <slot />
+    </article>
+    <Form title="Sign up to our newsletter" />
+  </div>
+</Layout>

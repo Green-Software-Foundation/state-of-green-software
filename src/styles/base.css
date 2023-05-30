@@ -1,0 +1,58 @@
+@import "@fontsource/nunito-sans/400.css";
+@import "@fontsource/nunito-sans/600.css";
+@import "@fontsource/nunito-sans/700.css";
+@import "@fontsource/nunito-sans/800.css";
+@import "@fontsource/nunito-sans/900.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --tag-knowledge: #c6db84;
+  --tag-tools: #84adab;
+  --tag-culture: #666666;
+  --tag-knowledge-text: #181818;
+  --tag-tools-text: #181818;
+  --tag-culture-text: #fff;
+  --primary: #aecc53;
+  --gray-darkest: #181818;
+  --gray-lightest: #f3f4f6;
+}
+.button {
+  padding: 0.75rem 1.5rem;
+  background: var(--primary);
+  color: var(--gray-darkest);
+  border: none;
+  display: inline-block;
+  font-weight: 800;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+.button:focus {
+  box-shadow: 0 0 0 3px rgb(174 204 83 / 50%);
+}
+
+.button.secondary {
+  background: transparent;
+}
+.button.secondary:hover {
+  background: var(--gray-lightest);
+}
+.button.secondary:focus {
+  box-shadow: 0 0 0 3px rgba(140, 140, 140, 0.5);
+}
+
+.button.icon {
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray-lightest);
+  color: var(--gray-darkest);
+  transition: all 0.2s ease-in-out;
+  width: 2.5rem;
+  height: 2.5rem;
+}

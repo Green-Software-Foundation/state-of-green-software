@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stateof.greensoftware.foundation/sitemap-index.xml

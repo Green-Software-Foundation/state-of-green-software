@@ -1,0 +1,25 @@
+---
+import { Icon } from "astro-icon";
+import Layout from "./Layout.astro";
+const { frontmatter } = Astro.props;
+const { title } = frontmatter;
+---
+
+<Layout>
+    <div
+        class="absolute left-0 top-0 -z-10 pointer-events-none hidden md:block"
+    >
+        <Icon name="pattern-left" height="600" />
+    </div>
+    <div
+        class="absolute -right-12 top-[500px] -z-10 pointer-events-none hidden md:block"
+    >
+        <Icon name="pattern-right" height="600" />
+    </div>
+    <h1 class="text-center text-secondary font-bold text-3xl mt-16 mb-8">
+        {title}
+    </h1>
+    <article class="prose max-w-4xl mx-auto">
+        <slot />
+    </article>
+</Layout>

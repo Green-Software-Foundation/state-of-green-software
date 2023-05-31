@@ -1,12 +1,12 @@
 ---
-import { Icon } from "astro-icon"; 
+import { Icon } from "astro-icon";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
   <div class="max-w-5xl mx-auto">
     <div id="wrapper" class="prose max-w-6xl mx-auto"></div>
-    <header
+    <!-- <div
       class="bg-gradient-to-tr from-gray-darkest to-gray-dark max-w-5xl mx-auto rounded-2xl py-12 px-4 relative mb-4"
     >
       <div
@@ -34,7 +34,7 @@ import Layout from "../layouts/Layout.astro";
           >
         </div>
       </div>
-    </header>
+    </div> -->
   </div>
 </Layout>
 <style is:global>
@@ -63,42 +63,45 @@ import Layout from "../layouts/Layout.astro";
   const wrapper = document.getElementById("wrapper") as HTMLCanvasElement;
   surveryResults.forEach((result, index) => {
     const div = document.createElement("div");
-div.classList.add("chart-card", "group");
-// Add H1 with the question
-const h1 = document.createElement("h1");
-h1.classList.add("text-lg", "font-bold", "flex", "items-center");
-// Add anchor link to the question
-const anchor = document.createElement("a");
-anchor.href = "#q" + (index + 1);
-anchor.id = "q" + (index + 1);
-// Add svg icon to the anchor
-const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-svg.setAttribute("viewBox", "0 0 24 24");
-svg.setAttribute("width", "16");
-svg.setAttribute("height", "16");
-svg.setAttribute("fill", "none");
-svg.setAttribute("stroke", "currentColor");
-svg.setAttribute("stroke-width", "2");
-svg.setAttribute("stroke-linecap", "round");
-svg.setAttribute("stroke-linejoin", "round");
-svg.classList.add("opacity-0", "group-hover:opacity-100", "transition", "duration-300", "ease-in-out", "text-secondary");
-const path = document.createElementNS(
-  "http://www.w3.org/2000/svg",
-  "path"
-);
-path.setAttribute(
-  "d",
-  "M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
-);
-// make a span for question 
-const span = document.createElement("span");
-span.classList.add("ml-2");
-span.textContent = result.question;
-svg.appendChild(path);
-anchor.appendChild(svg);
-h1.appendChild(anchor);
-h1.appendChild (span);
-div.appendChild(h1);
+    div.classList.add("chart-card", "group");
+    // Add H1 with the question
+    const h1 = document.createElement("h1");
+    h1.classList.add("text-lg", "font-bold", "flex", "items-center");
+    // Add anchor link to the question
+    const anchor = document.createElement("a");
+    anchor.href = "#q" + (index + 1);
+    anchor.id = "q" + (index + 1);
+    // Add svg icon to the anchor
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("viewBox", "0 0 24 24");
+    svg.setAttribute("width", "16");
+    svg.setAttribute("height", "16");
+    svg.setAttribute("fill", "none");
+    svg.setAttribute("stroke", "currentColor");
+    svg.setAttribute("stroke-width", "2");
+    svg.setAttribute("stroke-linecap", "round");
+    svg.setAttribute("stroke-linejoin", "round");
+    svg.classList.add(
+      "opacity-0",
+      "group-hover:opacity-100",
+      "transition",
+      "duration-300",
+      "ease-in-out",
+      "text-secondary"
+    );
+    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path.setAttribute(
+      "d",
+      "M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+    );
+    const span = document.createElement("span");
+    span.classList.add("ml-2");
+    span.textContent = result.question;
+    svg.appendChild(path);
+    anchor.appendChild(svg);
+    h1.appendChild(anchor);
+    h1.appendChild(span);
+    div.appendChild(h1);
 
     const canvas = document.createElement("canvas");
     canvas.classList.add("chart");
@@ -211,14 +214,54 @@ div.appendChild(h1);
       },
     ],
   };
+  // const div = document.createElement("div");
+  // div.classList.add("chart-card");
+  // // Add H1 with the question
+  // const h1 = document.createElement("h1");
+  // h1.innerText = Q23data.question;
+  // h1.classList.add("text-xl", "font-bold");
+  // div.appendChild(h1);
+
   const div = document.createElement("div");
-  div.classList.add("chart-card");
+  div.classList.add("chart-card", "group");
   // Add H1 with the question
   const h1 = document.createElement("h1");
-  h1.innerText = Q23data.question;
-  h1.classList.add("text-xl", "font-bold");
+  h1.classList.add("text-lg", "font-bold", "flex", "items-center");
+  // Add anchor link to the question
+  const anchor = document.createElement("a");
+  anchor.href = "#q" + 23;
+  anchor.id = "q" + 23;
+  // Add svg icon to the anchor
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("viewBox", "0 0 24 24");
+  svg.setAttribute("width", "16");
+  svg.setAttribute("height", "16");
+  svg.setAttribute("fill", "none");
+  svg.setAttribute("stroke", "currentColor");
+  svg.setAttribute("stroke-width", "2");
+  svg.setAttribute("stroke-linecap", "round");
+  svg.setAttribute("stroke-linejoin", "round");
+  svg.classList.add(
+    "opacity-0",
+    "group-hover:opacity-100",
+    "transition",
+    "duration-300",
+    "ease-in-out",
+    "text-secondary"
+  );
+  const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  path.setAttribute(
+    "d",
+    "M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+  );
+  const span = document.createElement("span");
+  span.classList.add("ml-2");
+  span.textContent = Q23data.question;
+  svg.appendChild(path);
+  anchor.appendChild(svg);
+  h1.appendChild(anchor);
+  h1.appendChild(span);
   div.appendChild(h1);
-
   const canvas = document.createElement("canvas");
   canvas.classList.add("chart");
   div.appendChild(canvas);

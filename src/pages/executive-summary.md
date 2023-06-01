@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/TextOnlyLayout.astro
-title: Business Case for Green Software
+title: Executive Summary
 ---
 
 

@@ -72,7 +72,7 @@ Catherine Maughan, Technical Copyeditor
 
 [Oleg Zhymolokhov](https://www.linkedin.com/in/oleg-zhymolokhov-2b742677), Project Manager
 
-[Osama Jandali](https://www.linkedin.com/in/osamajandali/), Lead Web Developer
+[Osama Jandali](https://www.linkedin.com/in/osamajandali/), Lead Web Developer & Designer
 
   
 

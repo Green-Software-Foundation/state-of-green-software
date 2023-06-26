@@ -13,6 +13,9 @@ const twitterURLEncoded = encodeURIComponent(
     `https://stateof.greensoftware.foundation${pathname}`
   )
 );
+const linkedinURLEncoded = encodeURIComponent(
+  `https://stateof.greensoftware.foundation${pathname}`
+);
 ---
 
 <Layout
@@ -49,7 +52,7 @@ const twitterURLEncoded = encodeURIComponent(
     <a
       id="linkedin-share"
       class="button icon"
-      href={`https://www.linkedin.com/sharing/share-offsite/?url=${`https://stateof.greensoftware.foundation${pathname}`}`}
+      href={`https://www.linkedin.com/sharing/share-offsite/?url=${linkedinURLEncoded}`}
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -58,6 +61,7 @@ const twitterURLEncoded = encodeURIComponent(
   </div>
   <div class="max-w-4xl mx-auto">
     <article class="prose max-w-none prose-xl">
+      <h1 class="text-4xl">{title}</h1>
       <slot />
     </article>
     <Form title="Sign up to our newsletter" />

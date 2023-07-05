@@ -42,7 +42,6 @@ const { title, description, image } = metaData
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={baseURL} />
     <meta
       property="og:title"
       content={title == "State of Green Software"
@@ -54,7 +53,6 @@ const { title, description, image } = metaData
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={baseURL} />
     <meta
       property="twitter:title"
       content={title == "State of Green Software"
@@ -81,7 +79,6 @@ const { title, description, image } = metaData
     <!-- End Google Tag Manager -->
   </head>
   <body class="bg-primary-lightest2 relative">
-
     <Header isHomepage={isHomepage} />
     <main class="px-4">
       <slot />

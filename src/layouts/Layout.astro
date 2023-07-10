@@ -61,20 +61,18 @@ const { title, description, image } = metaData
     />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={`${baseURL}${image}`} />
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4X7F9S319R"
-    ></script>
+    <!-- Google Tag Manager -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        // @ts-ignore: Unreachable code error
-        dataLayer.push(arguments);
-      }
-      // @ts-ignore: Unreachable code error
-      gtag("js", new Date());
-      // @ts-ignore: Unreachable code error
-      gtag("config", "G-4X7F9S319R");
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5ZDW8XX");
     </script>
     <!-- End Google Tag Manager -->
   </head>
@@ -105,5 +103,14 @@ const { title, description, image } = metaData
         box-shadow: 0 0 0 3px rgb(174 204 83 / 50%);
       }
     </style>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5ZDW8XX"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
   </body>
 </html>

@@ -1,0 +1,720 @@
+
+[
+  {
+    "question": "あなたはどのソフトウェア実践者に該当しますか？",
+    "answered": 2191,
+    "skipped": 0,
+    "data": [
+      {
+        "answer_choices": "開発者 / プログラマ / ソフトウェアエンジニア",
+        "response_percent": 38.7,
+        "responses": 848
+      },
+      {
+        "answer_choices": "チームリード",
+        "response_percent": 13.14,
+        "responses": 288
+      },
+      {
+        "answer_choices": "DevOps エンジニア / インフラストラクチャ開発者",
+        "response_percent": 4.06,
+        "responses": 89
+      },
+      {
+        "answer_choices": "アーキテクト",
+        "response_percent": 11.91,
+        "responses": 261
+      },
+      {
+        "answer_choices": "テクニカルサポート",
+        "response_percent": 2.19,
+        "responses": 48
+      },
+      {
+        "answer_choices": "UX / UI デザイナ",
+        "response_percent": 4.15,
+        "responses": 91
+      },
+      {
+        "answer_choices": "データアナリスト / データエンジニア / データサイエンティスト",
+        "response_percent": 9.17,
+        "responses": 201
+      },
+      {
+        "answer_choices": "CIO / CEO / CTO",
+        "response_percent": 3.65,
+        "responses": 80
+      },
+      {
+        "answer_choices": "テスタ / QA エンジニア",
+        "response_percent": 2.78,
+        "responses": 61
+      },
+      {
+        "answer_choices": "その他",
+        "response_percent": 10.22,
+        "responses": 224
+      }
+    ]
+  },
+  {
+    "question": "主にどの種類のアプリケーションを開発していますか？",
+    "answered": 2191,
+    "skipped": 0,
+    "data": [
+      {
+        "answer_choices": "クラウド",
+        "response_percent": 57.01,
+        "responses": 1249
+      },
+      {
+        "answer_choices": "モバイル",
+        "response_percent": 17.62,
+        "responses": 386
+      },
+      {
+        "answer_choices": "デスクトップ",
+        "response_percent": 23.09,
+        "responses": 506
+      },
+      {
+        "answer_choices": "IoT",
+        "response_percent": 8.12,
+        "responses": 178
+      },
+      {
+        "answer_choices": "ネットワーク",
+        "response_percent": 5.8,
+        "responses": 127
+      },
+      {
+        "answer_choices": "ウェブ",
+        "response_percent": 52.76,
+        "responses": 1156
+      },
+      {
+        "answer_choices": "機械学習",
+        "response_percent": 14.61,
+        "responses": 320
+      },
+      {
+        "answer_choices": "なし",
+        "response_percent": 5.71,
+        "responses": 125
+      },
+      {
+        "answer_choices": "その他",
+        "response_percent": 6.02,
+        "responses": 132
+      }
+    ]
+  },
+  {
+    "question": "ソフトウェア開発の職歴は何年間ありますか？",
+    "answered": 2191,
+    "skipped": 0,
+    "data": [
+      {
+        "answer_choices": "1年未満",
+        "response_percent": 7.39,
+        "responses": 162
+      },
+      {
+        "answer_choices": "1-2年",
+        "response_percent": 10.73,
+        "responses": 235
+      },
+      {
+        "answer_choices": "3-5年",
+        "response_percent": 19.67,
+        "responses": 431
+      },
+      {
+        "answer_choices": "6-10年",
+        "response_percent": 16.39,
+        "responses": 359
+      },
+      {
+        "answer_choices": "11-16年",
+        "response_percent": 15.61,
+        "responses": 342
+      },
+      {
+        "answer_choices": "16年以上",
+        "response_percent": 23.73,
+        "responses": 520
+      },
+      {
+        "answer_choices": "経験なし",
+        "response_percent": 6.48,
+        "responses": 142
+      }
+    ]
+  },
+  {
+    "question": "何歳ですか?",
+    "answered": 2191,
+    "skipped": 0,
+    "data": [
+      {
+        "answer_choices": "18-24",
+        "response_percent": 6.8,
+        "responses": 149
+      },
+      {
+        "answer_choices": "25-34",
+        "response_percent": 37.65,
+        "responses": 825
+      },
+      {
+        "answer_choices": "35-44",
+        "response_percent": 33.82,
+        "responses": 741
+      },
+      {
+        "answer_choices": "45-54",
+        "response_percent": 16.07,
+        "responses": 352
+      },
+      {
+        "answer_choices": "55-64",
+        "response_percent": 5.07,
+        "responses": 111
+      },
+      {
+        "answer_choices": "65+",
+        "response_percent": 0.59,
+        "responses": 13
+      }
+    ]
+  },
+  {
+    "question": "あなた自身を少数派の個人だと考えますか？これには人種、民族、障がい、宗教、性的指向、性自認、居住形態、神経多様性、その他の特性が含まれます。",
+    "answered": 2191,
+    "skipped": 0,
+    "data": [
+      {
+        "answer_choices": "はい",
+        "response_percent": 23.23,
+        "responses": 509
+      },
+      {
+        "answer_choices": "いいえ",
+        "response_percent": 67.73,
+        "responses": 1484
+      },
+      {
+        "answer_choices": "非回答希望",
+        "response_percent": 9.04,
+        "responses": 198
+      }
+    ]
+  },
+  {
+    "question": "あなたの性自認は何ですか？",
+    "answered": 2191,
+    "skipped": 0,
+    "data": [
+      {
+        "answer_choices": "男性",
+        "response_percent": 70.01,
+        "responses": 1534
+      },
+      {
+        "answer_choices": "女性",
+        "response_percent": 24.55,
+        "responses": 538
+      },
+      {
+        "answer_choices": "ノンバイナリー",
+        "response_percent": 0.64,
+        "responses": 14
+      },
+      {
+        "answer_choices": "非回答希望",
+        "response_percent": 4.43,
+        "responses": 97
+      },
+      {
+        "answer_choices": "その他",
+        "response_percent": 0.37,
+        "responses": 8
+      }
+    ]
+  },
+  {
+    "question": "持続可能性やグリーンソフトウェアは、あなたの公式な役割の一部に含まれていますか？",
+    "answered": 2191,
+    "skipped": 0,
+    "data": [
+      {
+        "answer_choices": "はい",
+        "response_percent": 26.02,
+        "responses": 570
+      },
+      {
+        "answer_choices": "いいえ",
+        "response_percent": 73.98,
+        "responses": 1621
+      }
+    ]
+  },
+  {
+    "question": "あなたが現在働いている会社の従業員規模はどの程度ですか？",
+    "answered": 2191,
+    "skipped": 0,
+    "data": [
+      {
+        "answer_choices": "1-999",
+        "response_percent": 24.19,
+        "responses": 530
+      },
+      {
+        "answer_choices": "1000-4999",
+        "response_percent": 15.38,
+        "responses": 337
+      },
+      {
+        "answer_choices": "5000-49999",
+        "response_percent": 29.07,
+        "responses": 637
+      },
+      {
+        "answer_choices": "50000+",
+        "response_percent": 31.36,
+        "responses": 687
+      }
+    ]
+  },
+  {
+    "question": "あなたは気候変動についてどのくらい懸念していますか？",
+    "answered": 2125,
+    "skipped": 66,
+    "data": [
+      {
+        "answer_choices": "とても懸念している",
+        "response_percent": 62.02,
+        "responses": 1318
+      },
+      {
+        "answer_choices": "懸念している",
+        "response_percent": 30.26,
+        "responses": 643
+      },
+      {
+        "answer_choices": "やや懸念している",
+        "response_percent": 6.16,
+        "responses": 131
+      },
+      {
+        "answer_choices": "全く懸念していない",
+        "response_percent": 1.55,
+        "responses": 33
+      }
+    ]
+  },
+  {
+    "question": "グリーンソフトウェアについてどの程度知っていますか？",
+    "answered": 2125,
+    "skipped": 66,
+    "data": [
+      {
+        "answer_choices": "とても知っている",
+        "response_percent": 13.55,
+        "responses": 288
+      },
+      {
+        "answer_choices": "いくらか知っている",
+        "response_percent": 53.51,
+        "responses": 1137
+      },
+      {
+        "answer_choices": "知らない",
+        "response_percent": 32.94,
+        "responses": 700
+      }
+    ]
+  },
+  {
+    "question": "職場において他の持続可能性に関する取り組みに興味がありますか、または関与していますか？",
+    "answered": 2125,
+    "skipped": 66,
+    "data": [
+      {
+        "answer_choices": "興味があり、関与している",
+        "response_percent": 29.88,
+        "responses": 635
+      },
+      {
+        "answer_choices": "興味はあるが、まだ関与していない",
+        "response_percent": 60.56,
+        "responses": 1287
+      },
+      {
+        "answer_choices": "興味がなく、関与していない",
+        "response_percent": 4.94,
+        "responses": 105
+      },
+      {
+        "answer_choices": "職場では持続可能性の取り組みはない",
+        "response_percent": 4.61,
+        "responses": 98
+      }
+    ]
+  },
+  {
+    "question": "あなたやあなたの組織は、ソフトウェアの環境影響を測定していますか？",
+    "answered": 1949,
+    "skipped": 242,
+    "data": [
+      {
+        "answer_choices": "常に測定している",
+        "response_percent": 15.55,
+        "responses": 303
+      },
+      {
+        "answer_choices": "たまに測定することがある",
+        "response_percent": 49.31,
+        "responses": 961
+      },
+      {
+        "answer_choices": "測定したことがない",
+        "response_percent": 35.15,
+        "responses": 685
+      }
+    ]
+  },
+  {
+    "question": "あなたはソフトウェアの環境影響を減らすための手段を取っていますか？",
+    "answered": 1949,
+    "skipped": 242,
+    "data": [
+      {
+        "answer_choices": "常に取っている",
+        "response_percent": 11.49,
+        "responses": 224
+      },
+      {
+        "answer_choices": "たまに取ることがある",
+        "response_percent": 44.89,
+        "responses": 875
+      },
+      {
+        "answer_choices": "取ったことはない",
+        "response_percent": 30.32,
+        "responses": 591
+      },
+      {
+        "answer_choices": "該当なし",
+        "response_percent": 13.29,
+        "responses": 259
+      }
+    ]
+  },
+  {
+    "question": "開発プロジェクトにどのようなグリーンソフトウェアの原則を取り入れていますか？",
+    "answered": 1949,
+    "skipped": 242,
+    "data": [
+      {
+        "answer_choices": "炭素効率の高いソフトウェアを開発している",
+        "response_percent": 11.08,
+        "responses": 216
+      },
+      {
+        "answer_choices": "エネルギー効率の良いソフトウェアを開発している",
+        "response_percent": 24.73,
+        "responses": 482
+      },
+      {
+        "answer_choices": "カーボンアウェアなソフトウェアを開発している (例：クリーンエネルギーの多い時間や場所にワークロードを移行する)",
+        "response_percent": 8.0,
+        "responses": 156
+      },
+      {
+        "answer_choices": "古いデバイスやハードウェア上で動作するソフトウェアを開発している",
+        "response_percent": 20.93,
+        "responses": 408
+      },
+      {
+        "answer_choices": "ハードウェアの利用を最大限高めている",
+        "response_percent": 35.2,
+        "responses": 686
+      },
+      {
+        "answer_choices": "ソフトウェアの送受信データ量を最小限に抑える",
+        "response_percent": 44.59,
+        "responses": 869
+      },
+      {
+        "answer_choices": "エネルギー消費量や炭素排出量を測定することで、コードを最適化する",
+        "response_percent": 16.01,
+        "responses": 312
+      },
+      {
+        "answer_choices": "その他",
+        "response_percent": 23.14,
+        "responses": 451
+      }
+    ]
+  },
+  {
+    "question": "将来、開発プロジェクトに取り入れたいグリーンソフトウェアの原則は以下のうちどれですか？",
+    "answered": 1949,
+    "skipped": 242,
+    "data": [
+      {
+        "answer_choices": "炭素効率の高いソフトウェア開発",
+        "response_percent": 51.77,
+        "responses": 1009
+      },
+      {
+        "answer_choices": "エネルギー効率の高いソフトウェア開発",
+        "response_percent": 62.7,
+        "responses": 1222
+      },
+      {
+        "answer_choices": "カーボンアウェアなソフトウェア開発(例：クリーンエネルギーの多い時間や場所にワークロードを移行する)",
+        "response_percent": 46.23,
+        "responses": 901
+      },
+      {
+        "answer_choices": "古いデバイスやハードウェア上で動作するソフトウェアの開発",
+        "response_percent": 29.4,
+        "responses": 573
+      },
+      {
+        "answer_choices": "ハードウェア利用の最大化",
+        "response_percent": 45.1,
+        "responses": 879
+      },
+      {
+        "answer_choices": "ソフトウェアの送受信データ量の最小化",
+        "response_percent": 48.59,
+        "responses": 947
+      },
+      {
+        "answer_choices": "エネルギー消費量や炭素排出量の測定によるコード最適化",
+        "response_percent": 56.54,
+        "responses": 1102
+      },
+      {
+        "answer_choices": "その他",
+        "response_percent": 7.13,
+        "responses": 139
+      }
+    ]
+  },
+  {
+    "question": "あなたの雇用主は、気候目標や持続可能性の目標を設定していますか？",
+    "answered": 1718,
+    "skipped": 473,
+    "data": [
+      {
+        "answer_choices": "包括的な公の目標と気候に関する具体的なコミットメントを設定している",
+        "response_percent": 47.38,
+        "responses": 814
+      },
+      {
+        "answer_choices": "いくつかの公の目標があるが、具体的なコミットメントはない",
+        "response_percent": 22.88,
+        "responses": 393
+      },
+      {
+        "answer_choices": "内部的な持続可能性に関する取り組みはあるが、公の目標や具体的なコミットメントはない",
+        "response_percent": 16.41,
+        "responses": 282
+      },
+      {
+        "answer_choices": "持続可能性に関する目標、取り組み、コミットメントはない",
+        "response_percent": 13.33,
+        "responses": 229
+      }
+    ]
+  },
+  {
+    "question": "もしあなたの雇用主が気候目標や持続可能性の目標を設定している場合、その目標の一部としてグリーンソフトウェアに投資がなされていると感じますか？",
+    "answered": 1718,
+    "skipped": 473,
+    "data": [
+      {
+        "answer_choices": "とても投資されている",
+        "response_percent": 29.57,
+        "responses": 508
+      },
+      {
+        "answer_choices": "幾分か投資されている",
+        "response_percent": 43.54,
+        "responses": 748
+      },
+      {
+        "answer_choices": "投資されていない",
+        "response_percent": 12.75,
+        "responses": 219
+      },
+      {
+        "answer_choices": "グリーンソフトウェアが選択して組織に認識されていない",
+        "response_percent": 6.05,
+        "responses": 104
+      },
+      {
+        "answer_choices": "非該当（持続可能性に関する目標、取り組み、コミットメントがないため）",
+        "response_percent": 8.09,
+        "responses": 139
+      }
+    ]
+  },
+  {
+    "question": "グリーン化に関する取り組み実行をあなたの企業の経営陣はサポートしていますか？",
+    "answered": 1718,
+    "skipped": 473,
+    "data": [
+      {
+        "answer_choices": "はい",
+        "response_percent": 78.46,
+        "responses": 1348
+      },
+      {
+        "answer_choices": "いいえ",
+        "response_percent": 21.54,
+        "responses": 370
+      }
+    ]
+  },
+  {
+    "question": "以下の項目を、あなたや雇用主がグリーンソフトウェアを実施するのにどれだけ役立つかを基準に並べ替えてください。ドラッグアンドドロップで項目を並べ替え、1が最も重要なものとなります。",
+    "answered": 1718,
+    "skipped": 473,
+    "data": [
+      {
+        "answer_choices": "より直接的なインセンティブ (個人のOKR、幹部の報酬に結び付けられた持続可能性に関する目標、顧客要望)",
+        "responses": 597,
+        "response_percent": 34.83,
+        "score": 2.7
+      },
+      {
+        "answer_choices": "より多くのトレーニング、教育資源",
+        "responses": 627,
+        "response_percent": 36.48,
+        "score": 2.96
+      },
+      {
+        "answer_choices": "経営陣からのより多くのサポート",
+        "responses": 230,
+        "response_percent": 13.36,
+        "score": 2.2
+      },
+      {
+        "answer_choices": "特定のワークフローに最適化されたツール",
+        "responses": 264,
+        "response_percent": 15.23,
+        "score": 2.13
+      }
+    ]
+  },
+  {
+    "question": "以下の項目を、ソフトウェアのグリーン化に向けた投資を促進する要素として重要度の高い順に並べ替えてください。ドラッグアンドドロップで項目を並べ替え、1が最も重要なものとなります。",
+    "answered": 1718,
+    "skipped": 473,
+    "data": [
+      {
+        "answer_choices": "規制",
+        "responses": 734,
+        "response_percent": 43.21,
+        "score": 3.05
+      },
+      {
+        "answer_choices": "標準",
+        "responses": 358,
+        "response_percent": 20.85,
+        "score": 2.62
+      },
+      {
+        "answer_choices": "認証",
+        "responses": 174,
+        "response_percent": 10.18,
+        "score": 1.95
+      },
+      {
+        "answer_choices": "収益",
+        "responses": 452,
+        "response_percent": 26.76,
+        "score": 2.38
+      }
+    ]
+  },
+  {
+    "question": "今までグリーンソフトウェアのトレーニングを受けたことがありますか？",
+    "answered": 1718,
+    "skipped": 473,
+    "data": [
+      {
+        "answer_choices": "グリーンソフトウェアのトレーニングに興味がない",
+        "responses": 59,
+        "response_percent": 3.43,
+        "score": 0
+      },
+      {
+        "answer_choices": "今までグリーンソフトウェアのトレーニングを聞いたことがない",
+        "responses": 574,
+        "response_percent": 33.41,
+        "score": 0
+      },
+      {
+        "answer_choices": "グリーンソフトウェアのトレーニングに興味はあるが、受けたことはない",
+        "responses": 945,
+        "response_percent": 55.01,
+        "score": 0
+      },
+      {
+        "answer_choices": "グリーンソフトウェアのトレーニングを受けたことがある",
+        "responses": 140,
+        "response_percent": 8.15,
+        "score": 0
+      }
+    ]
+  },
+  {
+    "question": "グリーンソフトウェアについてより学ぶためにどこに行きますか？",
+    "answered": 1718,
+    "skipped": 473,
+    "data": [
+      {
+        "answer_choices": "同僚や仲間",
+        "responses": 616,
+        "response_percent": 35.86,
+        "score": 0
+      },
+      {
+        "answer_choices": "外部の情報源",
+        "responses": 831,
+        "response_percent": 48.37,
+        "score": 0
+      },
+      {
+        "answer_choices": "ソーシャルメディア(Twitter, YouTube, Reddit, Discord, Twitch,  LinkedIn)",
+        "responses": 606,
+        "response_percent": 35.27,
+        "score": 0
+      },
+      {
+        "answer_choices": "GSF、Green Web Foundationといった組織.",
+        "responses": 668,
+        "response_percent": 38.88,
+        "score": 0
+      },
+      {
+        "answer_choices": "技術における持続可能性分野の特定のソートリーダー（思想的リーダー）",
+        "responses": 372,
+        "response_percent": 21.65,
+        "score": 0
+      },
+      {
+        "answer_choices": "その他",
+        "responses": 163,
+        "response_percent": 9.49,
+        "score": 0
+      }
+    ]
+  }
+]

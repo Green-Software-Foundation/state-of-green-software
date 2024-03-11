@@ -1,7 +1,6 @@
 ---
 import "../styles/base.css";
 
-import LanguagePicker from '../components/LanguagePicker.astro';
 import { getLangFromUrl } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 
@@ -117,8 +116,5 @@ const { title, description, image } = metaData
     >
     <!-- End Google Tag Manager (noscript) -->
 
-    <footer>
-      <LanguagePicker />
-    </footer>
   </body>
 </html>

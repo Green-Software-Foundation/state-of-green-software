@@ -1,0 +1,53 @@
+---
+import { Icon } from "astro-icon";
+import Form from "../../components/Form.astro";
+import Layout from "../../layouts/Layout.astro";
+import InsightsCatalog from "../../components/InsightsCatalog";
+---
+
+<Layout isHomepage>
+  <header
+    class="bg-gradient-to-tr from-gray-darkest to-gray-dark max-w-5xl mx-auto rounded-2xl py-12 px-4 relative mb-4"
+  >
+    <div
+      class="absolute top-0 bottom-0 w-full h-full pointer-events-none left-0 z-10 opacity-40 lg:opacity-100"
+    >
+      <Icon name="pattern-left" class="h-full" />
+    </div>
+    <div
+      class="absolute top-0 bottom-0 w-full h-full pointer-events-none right-0 z-10 opacity-40 lg:opacity-100"
+    >
+      <Icon name="pattern-right" class="h-full ml-auto" />
+    </div>
+    <div class="mb-4">
+      <Icon name="icon" width="64" class="m-auto" />
+    </div>
+    <div class="max-w-lg mx-auto">
+      <h1
+        class="text-center text-xl lg:text-3xl font-extrabold mb-2 text-white"
+      >
+        2023 State of Green Software
+      </h1>
+      <p class="text-center text-gray-300 text-sm lg:text-base">
+        A new report that brings global insights and data from industry leaders
+        and researchers to the forefront to reduce software's harm to Earth and
+        increase investment in decarbonizing software at scale.
+      </p>
+      <div>
+        <a
+          class="flex items-center justify-center mt-8 gap-4 text-white"
+          href="https://greensoftware.foundation/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <span>By</span>
+          <Icon name="logo-gsf" width="100" />
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="max-w-5xl mx-auto">
+    <InsightsCatalog client:load />
+    <Form title="Sign up to our newsletter" />
+  </div>
+</Layout>

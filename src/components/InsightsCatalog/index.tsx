@@ -9,7 +9,7 @@ const searchClient = algoliasearch('SWCMJQWWC9', '7177f1ae5c3725e4c33f26a69eeeaa
 const Hit = ({ hit }: {
   hit: Insight
 }) =>
-  <Card insight={{ url: `/insights/${hit.url}`, title: hit.title, tags: hit.tags, insightNo: hit.insightNo }} />
+  <Card insight={{ url: `insights/${hit.url}`, title: hit.title, tags: hit.tags, insightNo: hit.insightNo }} />
 const InsightsCatalog = () => {
   return (
     <section className={Styles.container}>

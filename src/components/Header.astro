@@ -1,4 +1,7 @@
 ---
+import { getLangFromUrl } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+
 import { Icon } from "astro-icon";
 const { isHomepage } = Astro.props;
 const links = [
@@ -8,11 +11,11 @@ const links = [
   },
   {
     label: "Executive Summary",
-    url: "/executive-summary",
+    url: `/${lang}/executive-summary`,
   },
   {
     label: "Methodology",
-    url: "/methodology",
+    url: `/${lang}/methodology`,
   },
   {
     label: "Theory of Change",
@@ -20,7 +23,7 @@ const links = [
   },
   {
     label: "Survey Data",
-    url: "/survey",
+    url: `/${lang}/survey`,
   },
 ];
 
@@ -62,7 +65,7 @@ const links = [
             class="bg-primary inline-block hover:bg-primary-light font-bold py-2 px-4 rounded 
             transition duration-200 ease-in-out
             "
-            href="/"
+            href=`/${lang}`
           >
             More Insights
           </a>

@@ -1,41 +1,53 @@
-import * as dotenv from "dotenv"
-dotenv.config()
+import * as dotenv from "dotenv";
+dotenv.config();
 
-import algoliasearch from "algoliasearch"
+import algoliasearch from "algoliasearch";
 const client = algoliasearch(
   process.env.ALGOLIA_APP_ID,
   process.env.ALGOLIA_WRITE_API_KEY
-)
+);
 
-// 1. Build a dataset
-import fs from "fs"
-import path from "path"
-import matter from "gray-matter"
-import removeMd from "remove-markdown"
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import removeMd from "remove-markdown";
 
-const filenames = fs.readdirSync(path.join("./src/pages/insights"))
-const data = filenames.map(filename => {
-  try {
-    const markdownWithMeta = fs.readFileSync("./src/pages/insights/" + filename)
-    const { data: frontmatter, content } = matter(markdownWithMeta)
-    return {
-      url:  filename.replace(/\.mdx$/, ''),
-      objectID: filename.replace(/\.mdx$/, ''),
-      title: frontmatter.title,
-      tags: frontmatter.tags,
-      insightNo: frontmatter.insightNo,
-      content: removeMd(content).replace(/\n/g, ""),
+// Function to process files in a given insights directory
+function processInsightsDirectory(directory) {
+  const filenames = fs.readdirSync(path.join(directory));
+  const data = filenames.map((filename) => {
+    try {
+      const fullPath = path.join(directory, filename);
+      const markdownWithMeta = fs.readFileSync(fullPath);
+      const { data: frontmatter, content } = matter(markdownWithMeta);
+      const language = directory.split('/')[3];
+      return {
+        url: filename.replace(/\.mdx?$/, ''),
+        objectID: language + " - " + filename.replace(/\.mdx?$/, ''),
+        title: frontmatter.title,
+        tags: frontmatter.tags,
+        insightNo: frontmatter.insightNo,
+        content: removeMd(content).replace(/\n/g, ""),
+        language
+      };
+    } catch (e) {
+      console.log(e.message);
     }
-  } catch (e) {
-    console.log(e.message)
-  }
-})
+  });
+  return data;
+}
 
+// 1. Build datasets for each language
+const englishInsights = processInsightsDirectory("./src/pages/en/insights/");
+const japaneseInsights = processInsightsDirectory("./src/pages/ja/insights/");
 
-// 2. Send the dataset in JSON format
+// Combine the insights from both languages
+const combinedData = [...englishInsights, ...japaneseInsights];
+
+// 2. Send the combined dataset in JSON format
 const index = client.initIndex('Insights - SoGS');
 
-index.saveObjects(data)
+index.saveObjects(combinedData)
   .then(({ objectIDs }) => {
     console.log("Algolia: All records have been imported");
   })

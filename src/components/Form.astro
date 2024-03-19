@@ -2,6 +2,18 @@
 import "@fontsource/nunito-sans/400.css";
 import { Icon } from "astro-icon";
 const { title, containerClass } = Astro.props;
+import { getLangFromUrl } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const texts={
+  en: {
+    title: "Sign up to our newsletter",
+    button: "Sign up"
+  },
+  ja: {
+    title: "ニュースレターにサインアップしてください",
+    button: "サインアップ"
+  }
+}
 ---
 
 <section id="get-report" class={containerClass}>
@@ -21,7 +33,7 @@ const { title, containerClass } = Astro.props;
           <div>
             <Icon name="newsletter" width="196" style={{ margin: "auto" }} />
           </div>
-          <h1>{title}</h1>
+          <h1>{texts[lang].title}</h1>
 
           <div class="mc-field-group">
             <input
@@ -62,7 +74,7 @@ const { title, containerClass } = Astro.props;
             <div class="clear">
               <input
                 type="submit"
-                value="Sign up"
+                value={texts[lang].button}
                 name="subscribe"
                 id="mc-embedded-subscribe"
                 class="button"

@@ -1,5 +1,5 @@
 import algoliasearch from 'algoliasearch/lite';
-import { InstantSearch, SearchBox, PoweredBy, Hits, RefinementList } from 'react-instantsearch-hooks-web';
+import { InstantSearch, SearchBox, PoweredBy, Hits, RefinementList, Configure } from 'react-instantsearch-hooks-web';
 import Card from "../Card";
 import Styles from "./styles.module.css";
 
@@ -10,12 +10,16 @@ const Hit = ({ hit }: {
   hit: Insight
 }) =>
   <Card insight={{ url: `insights/${hit.url}`, title: hit.title, tags: hit.tags, insightNo: hit.insightNo }} />
-const InsightsCatalog = () => {
+const InsightsCatalog = ({ language }: {language: string}) => {
   return (
     <section className={Styles.container}>
       <InstantSearch searchClient={searchClient} indexName="Insights - SoGS">
+        <Configure filters={`language:${language}`} />
         <SearchBox
-          placeholder="Search insights..."
+
+          placeholder={
+            language === 'ja' ? "インサイトを検索..." :
+              "Search insights..."}
           classNames={
             {
               form: 'relative',

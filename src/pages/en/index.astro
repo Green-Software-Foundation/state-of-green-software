@@ -5,7 +5,7 @@ import Layout from "../../layouts/Layout.astro";
 import InsightsCatalog from "../../components/InsightsCatalog";
 ---
 
-<Layout isHomepage>
+<Layout isHomepage >
   <header
     class="bg-gradient-to-tr from-gray-darkest to-gray-dark max-w-5xl mx-auto rounded-2xl py-12 px-4 relative mb-4"
   >
@@ -47,7 +47,7 @@ import InsightsCatalog from "../../components/InsightsCatalog";
     </div>
   </header>
   <div class="max-w-5xl mx-auto">
-    <InsightsCatalog client:load />
+    <InsightsCatalog language="en" client:load />
     <Form title="Sign up to our newsletter" />
   </div>
 </Layout>

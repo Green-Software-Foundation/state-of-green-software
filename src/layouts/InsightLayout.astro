@@ -6,7 +6,8 @@ const { title, image, shortDescription, twitter } = frontmatter;
 import "../styles/base.css";
 import Layout from "./Layout.astro";
 const { pathname } = Astro.url;
-
+import { getLangFromUrl } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
 const twitterURLEncoded = encodeURIComponent(
   twitter.replace(
     "https://stateof.greensoftware.foundation",
@@ -39,7 +40,9 @@ const linkedinURLEncoded = encodeURIComponent(
   <div
     class="social max-w-5xl mx-auto flex items-center justify-end gap-4 mb-4"
   >
-    <span> Share</span>
+    <span>{
+      lang ==='ja'? "シェア": "Share"
+      } </span>
     <a
       id="twitter-share"
       class="button icon"
@@ -47,7 +50,7 @@ const linkedinURLEncoded = encodeURIComponent(
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Icon name="twitter" height="24" color="#006d68" />
+      <Icon name="twitter" height="16" color="#006d68" />
     </a>
     <a
       id="linkedin-share"

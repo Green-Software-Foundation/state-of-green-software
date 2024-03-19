@@ -5,28 +5,52 @@ const lang = getLangFromUrl(Astro.url);
 import { Icon } from "astro-icon";
 import LanguagePicker from './LanguagePicker.astro';
 const { isHomepage } = Astro.props;
-const links = [
-  {
-    label: "What is green software",
-    url: "https://learn.greensoftware.foundation/introduction#what-is-green-software",
-  },
-  {
-    label: "Executive Summary",
-    url: `/${lang}/executive-summary`,
-  },
-  {
-    label: "Methodology",
-    url: `/${lang}/methodology`,
-  },
-  {
-    label: "Theory of Change",
-    url: "https://greensoftware.foundation/articles/theory-of-change",
-  },
-  {
-    label: "Survey Data",
-    url: `/${lang}/survey`,
-  },
-];
+const links = {
+  en:[
+    {
+      label: "What is green software",
+      url: "https://learn.greensoftware.foundation/introduction#what-is-green-software",
+    },
+    {
+      label: "Executive Summary",
+      url: `/en/executive-summary`,
+    },
+    {
+      label: "Methodology",
+      url: `/en/methodology`,
+    },
+    {
+      label: "Theory of Change",
+      url: "https://greensoftware.foundation/articles/theory-of-change",
+    },
+    {
+      label: "Survey Data",
+      url: `/en/survey`,
+    },
+  ],
+  ja:[
+    {
+      label: "グリーンソフトウェアとは",
+      url: "https://learn.greensoftware.foundation/introduction#what-is-green-software",
+    },
+    {
+      label: "概要",
+      url: `/ja/executive-summary`,
+    },
+    {
+      label: "方法論",
+      url: `/ja/methodology`,
+    },
+    {
+      label: "変化の理論",
+      url: "https://greensoftware.foundation/articles/theory-of-change",
+    },
+    {
+      label: "調査データ",
+      url: `/ja/survey`,
+    },
+  ]
+};
 
 ---
 <div class=" max-w-5xl mx-auto px-4  my-4">
@@ -34,7 +58,7 @@ const links = [
   <nav
     class="text-xs lg:text-sm text-center font-bold flex items-center justify-between flex-wrap  relative"
   >
-    <a href="/" aria-label="SoGS Logo">
+    <a href={`/${lang}`} aria-label="SoGS Logo">
       <Icon name="logo-alt" className="w-32 lg:w-40" />
     </a>
     <button
@@ -47,7 +71,7 @@ const links = [
       class="hidden lg:flex gap-4 items-center absolute lg:static bg-white lg:bg-transparent shadow-md lg:shadow-none z-50 top-10 left-0 w-full lg:w-auto py-3 lg:py-0"
     >
       {
-        links.map(({ label, url }) => (
+        links[lang].map(({ label, url }) => (
           <li class="py-3 lg:py-0">
             <a
               href={url}
@@ -69,7 +93,7 @@ const links = [
               "
               href=`/${lang}`
             >
-              More Insights
+            {lang ==="ja"? "さらに詳しく": "More Insights"}
             </a>
           </li>
         )
